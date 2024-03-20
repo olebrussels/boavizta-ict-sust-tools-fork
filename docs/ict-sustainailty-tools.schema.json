@@ -20,15 +20,46 @@
     },
     "assessment_type": {
       "type": "string",
-      "description": "Type of assessment the tool is designed for"
+      "description": "Type of assessment the tool is designed for",
+      "enum": [
+        "Best practices",
+        "Evaluation",
+        "Measure",
+        "TBQ"
+      ]
     },
     "perimeters": {
       "type": "string",
-      "description": "Perimeters considered by the tool"
+      "description": "What is the general scope covered by the tool. Several values are possible:",
+      "enum": [
+        "Global / Information System",
+        "Infra / Datacenter",
+        "Infra / Cloud (for example: GCP, AWS, Azure, OVH Cloud)",
+        "Infra / Network",
+        "Equipment / End-user Devices",
+        "Equipment / IoT",
+        "Equipment / Industrial equipment",
+        "Software / Development Tools",
+        "Software / CI/CD",
+        "Software / API",
+        "Software / Mobile Apps (for example: Android App, iPhone App)",
+        "Software / Web Apps (for example: React, Spring, Node.js, ROR, PHP apps)",
+        "Software / Web Content (for example: WordPress, Drupal, Prestashop, Magento, etc.)",
+        "TBQ"
+      ]
     },
     "environmental_indicators": {
       "type": "string",
-      "description": "Environmental indicators utilized by the tool"
+      "description": "Environmental indicators utilized by the tool",
+      "enum": [
+        "Final Energy consumption (usually in Joule per WattHour)",
+        "Primary Energy consumption (usually in Joule)",
+        "GWP: Global Warming Potential aka the carbon footprint usually in CO2 equivalent",
+        "ADPf (MJ): Abiotic ressource Depletion Potential for fossil fuel usually in Antimony (Sb) equivalent",
+        "ADPe (Sbeq): Abiotic ressource Depletion Potential for element (minerals, etc.) usually in Antimony (Sb) equivalent",
+        "Water Depletion also called water footprint",
+        "Not Applicable"
+      ]
     },
     "functional_units": {
       "type": "string",
@@ -78,7 +109,7 @@
     },
     "quick_description": {
       "type": "string",
-      "description": "Ideally it should be the description provided by the owner of the tool."
+      "description": "Brief description of the tool"
     },
     "status": {
       "type": "string",
