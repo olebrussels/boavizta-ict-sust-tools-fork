@@ -7,16 +7,16 @@
   "properties": {
     "tool_name": {
       "type": "string",
-      "description": "Name of the tool"
+      "description": "The tool must have a well identified name and not being just an item in the menu of a bigger tool (e.g. not the “sustainability check” option in a development tool)"
     },
     "organization": {
       "type": "string",
-      "description": "Organization responsible for the tool"
+      "description": "The legal entity having the intellectual property of the tool."
     },
     "website": {
       "type": "string",
       "format": "uri",
-      "description": "Website URL of the tool"
+      "description": "The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionalities, its licensing, a.s.o . Required format is a URL."
     },
     "assessment_type": {
       "type": "string",
@@ -48,7 +48,8 @@
     },
     "originating_country": {
       "type": "string",
-      "description": "Country where the tool originated"
+      "description": "Country where the tool originated (ISO 3166-1 alpha-3 country code)",
+      "pattern": "^[A-Z]{3}$"
     },
     "logo": {
       "type": "string",
