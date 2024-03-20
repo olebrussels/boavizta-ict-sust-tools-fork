@@ -78,7 +78,7 @@
     },
     "quick_description": {
       "type": "string",
-      "description": "Brief description of the tool"
+      "description": "Ideally it should be the description provided by the owner of the tool."
     },
     "status": {
       "type": "string",
