@@ -1,75 +1,96 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://github.com/Boavizta/ict-sustainability-tools/docs/ict-sustainailty-tools.schema.json",
   "title": "ICT sustainability tools",
   "description": "A list of tools that help assess environmental sustainability of IS services",
   "type": "object",
   "properties": {
     "tool_name": {
-      "type": "string"
+      "type": "string",
+      "description": "Name of the tool"
     },
     "organization": {
-      "type": "string"
+      "type": "string",
+      "description": "Organization responsible for the tool"
     },
     "website": {
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "description": "Website URL of the tool"
     },
     "assessment_type": {
-      "type": "string"
+      "type": "string",
+      "description": "Type of assessment the tool is designed for"
     },
     "perimeters": {
-      "type": "string"
+      "type": "string",
+      "description": "Perimeters considered by the tool"
     },
     "environmental_indicators": {
-      "type": "string"
+      "type": "string",
+      "description": "Environmental indicators utilized by the tool"
     },
     "functional_units": {
-      "type": "string"
+      "type": "string",
+      "description": "Functional units considered in the assessment"
     },
     "life_cycle_step": {
-      "type": "string"
+      "type": "string",
+      "description": "Life cycle step covered by the tool"
     },
     "licence": {
-      "type": "string"
+      "type": "string",
+      "description": "Licence information for the tool"
     },
     "self-hostable": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "Indicates whether the tool can be self-hosted"
     },
     "originating_country": {
-      "type": "string"
+      "type": "string",
+      "description": "Country where the tool originated"
     },
     "logo": {
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "description": "URL to the logo of the tool"
     },
     "methodology_transparency": {
-      "type": "string"
+      "type": "string",
+      "description": "Level of transparency in the tool's methodology"
     },
     "inside_model": {
-      "type": "string"
+      "type": "string",
+      "description": "Whether the tool is used inside a model"
     },
     "main_scientific_sources": {
-      "type": "string"
+      "type": "string",
+      "description": "Main scientific sources utilized by the tool"
     },
     "main_focus": {
-      "type": "string"
+      "type": "string",
+      "description": "Primary focus area of the tool"
     },
     "focus": {
-      "type": "string"
+      "type": "string",
+      "description": "Additional focus areas of the tool"
     },
     "quick_description": {
-      "type": "string"
+      "type": "string",
+      "description": "Brief description of the tool"
     },
     "status": {
-      "type": "string"
+      "type": "string",
+      "description": "Current status of the tool"
     },
     "last_edit": {
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "description": "Date and time of last edit"
     },
     "last_editor": {
-      "type": "string"
+      "type": "string",
+      "description": "Editor who made the last edit"
     }
   },
   "required": [
