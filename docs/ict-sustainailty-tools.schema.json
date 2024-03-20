@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Boavizta/ict-sustainability-tools/docs/ict-sustainailty-tools.schema.json",
+  "title": "ICT sustainability tools",
+  "description": "A list of tools that help assess environmental sustainability of IS services",
+  "type": "object",
+  "properties": {
+    "tool_name": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "assessment_type": {
+      "type": "string"
+    },
+    "perimeters": {
+      "type": "string"
+    },
+    "environmental_indicators": {
+      "type": "string"
+    },
+    "functional_units": {
+      "type": "string"
+    },
+    "life_cycle_step": {
+      "type": "string"
+    },
+    "licence": {
+      "type": "string"
+    },
+    "self-hostable": {
+      "type": "boolean"
+    },
+    "originating_country": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string",
+      "format": "uri"
+    },
+    "methodology_transparency": {
+      "type": "string"
+    },
+    "inside_model": {
+      "type": "string"
+    },
+    "main_scientific_sources": {
+      "type": "string"
+    },
+    "main_focus": {
+      "type": "string"
+    },
+    "focus": {
+      "type": "string"
+    },
+    "quick_description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "last_edit": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_editor": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tool_name",
+    "organization",
+    "website",
+    "assessment_type",
+    "perimeters",
+    "environmental_indicators",
+    "functional_units",
+    "life_cycle_step",
+    "licence",
+    "self-hostable",
+    "originating_country",
+    "logo",
+    "methodology_transparency",
+    "inside_model",
+    "main_scientific_sources",
+    "main_focus",
+    "focus",
+    "quick_description",
+    "status",
+    "last_edit",
+    "last_editor"
+  ]
+}
