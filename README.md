@@ -2,7 +2,7 @@
 
 ## draft json schema
 
-See the draft [schema](docs/ict-sustainailty-tools.schema.json)
+See the draft [schema](docs/ict-sustainailty-tools.draft.schema.json)
 
 ## draft dataset
 
