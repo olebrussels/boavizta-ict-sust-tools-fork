@@ -55,19 +55,49 @@
         "Final Energy consumption (usually in Joule per WattHour)",
         "Primary Energy consumption (usually in Joule)",
         "GWP: Global Warming Potential aka the carbon footprint usually in CO2 equivalent",
-        "ADPf (MJ): Abiotic ressource Depletion Potential for fossil fuel usually in Antimony (Sb) equivalent",
-        "ADPe (Sbeq): Abiotic ressource Depletion Potential for element (minerals, etc.) usually in Antimony (Sb) equivalent",
+        "ADPf (MJ): Abiotic resource Depletion Potential for fossil fuel usually in Antimony (Sb) equivalent",
+        "ADPe (Sbeq): Abiotic resource Depletion Potential for element (minerals, etc.) usually in Antimony (Sb) equivalent",
         "Water Depletion also called water footprint",
         "Not Applicable"
       ]
     },
     "functional_units": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Process (System)",
+          "Application",
+          "Team",
+          "Project",
+          "User",
+          "Request (http)",
+          "Feature",
+          "User Story",
+          "Machine",
+          "Room",
+          "Website",
+          "Network Traffic",
+          "TBQ"
+        ]
+      },
       "description": "Functional units considered in the assessment"
     },
     "life_cycle_step": {
-      "type": "string",
-      "description": "Life cycle step covered by the tool"
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Extraction",
+          "Manufacturing",
+          "Transport",
+          "Usage",
+          "End of life",
+          "Not Applicable (to be selected if the tool is not based on an LCA)",
+          "TBQ"
+        ]
+      },
+      "description": "Life cycle steps covered by the tool"
     },
     "licence": {
       "type": "string",
