@@ -101,7 +101,17 @@
     },
     "licence": {
       "type": "string",
-      "description": "Licence information for the tool"
+      "description": "Describe the legal environment of the intellectual property of the tool",
+      "enum": [
+        "Open-Source under Apache 2.0 licence",
+        "Open-Source under AGPLv3 licence",
+        "Open-Source under GPLv3 licence",
+        "Open-Source under BSD-3 licence",
+        "Open-Source under an unkownn licence",
+        "Business Source - non permissive licence",
+        "Closed Source / Commercial",
+        "TBQ: To be Qualified"
+      ]
     },
     "self-hostable": {
       "type": "boolean",
@@ -119,15 +129,48 @@
     },
     "methodology_transparency": {
       "type": "string",
-      "description": "Level of transparency in the tool's methodology"
+      "description": "Level of transparency in the tool's methodology",
+      "enum": [
+        "Undisclosed",
+        "Disclosed only to internal stakeholders or clients",
+        "Fully Disclosed",
+        "TBQ: To Be Qualified"
+      ]
     },
     "inside_model": {
-      "type": "string",
-      "description": "Whether the tool is used inside a model"
-    },
-    "main_scientific_sources": {
-      "type": "string",
-      "description": "Main scientific sources utilized by the tool"
+      "type": "object",
+      "description": "Main model being used for the evaluation",
+      "properties": {
+        "model_name": {
+          "type": "string",
+          "description": "name of the model"
+        },
+        "model_site": {
+          "type": "uri",
+          "description": "URL of the model"
+        },
+        "main_data_source": {
+          "type": "string",
+          "description": "Main data sources used to build the the model"
+        },
+        "creation_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation date of the model"
+        },
+        "model_organization": {
+          "type": "string",
+          "description": "Organization that created the model"
+        },
+        "main_scientific_sources": {
+          "type": "string",
+          "description": "Main scientific sources utilized by the tool"
+        }
+      },
+      "required": [
+        "model_name",
+        "model_site"
+      ]
     },
     "main_focus": {
       "type": "string",
@@ -143,7 +186,14 @@
     },
     "status": {
       "type": "string",
-      "description": "Current status of the tool"
+      "description": "Describe where the recording stands in the listing process:",
+      "enum": [
+        "Sandbox",
+        "Draft",
+        "Boavizta reviewed",
+        "Published",
+        "Not to be listed"
+      ]
     },
     "last_edit": {
       "type": "string",
@@ -170,7 +220,6 @@
     "logo",
     "methodology_transparency",
     "inside_model",
-    "main_scientific_sources",
     "main_focus",
     "focus",
     "quick_description",
