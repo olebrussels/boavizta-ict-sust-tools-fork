@@ -146,7 +146,8 @@
           "description": "name of the model"
         },
         "model_site": {
-          "type": "uri",
+          "type": "string",
+          "format": "uri",
           "description": "URL of the model"
         },
         "main_data_source": {
