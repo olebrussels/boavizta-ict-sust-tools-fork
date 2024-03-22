@@ -1,0 +1,231 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Boavizta/ict-sustainability-tools/docs/ict-sustainailty-tools.draft.schema.json",
+  "title": "ICT sustainability tools - draft",
+  "description": "A list of tools that help assess environmental sustainability of IS services",
+  "type": "object",
+  "properties": {
+    "tool_name": {
+      "type": "string",
+      "description": "The tool must have a well identified name and not being just an item in the menu of a bigger tool (e.g. not the “sustainability check” option in a development tool)"
+    },
+    "organization": {
+      "type": "string",
+      "description": "The legal entity having the intellectual property of the tool."
+    },
+    "website": {
+      "type": "string",
+      "format": "uri",
+      "description": "The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionalities, its licensing, a.s.o . Required format is a URL."
+    },
+    "assessment_type": {
+      "type": "string",
+      "description": "Type of assessment the tool is designed for",
+      "enum": [
+        "Best practices",
+        "Evaluation",
+        "Measure",
+        "TBQ"
+      ]
+    },
+    "perimeters": {
+      "type": "string",
+      "description": "What is the general scope covered by the tool. Several values are possible:",
+      "enum": [
+        "Global / Information System",
+        "Infra / Datacenter",
+        "Infra / Cloud (for example: GCP, AWS, Azure, OVH Cloud)",
+        "Infra / Network",
+        "Equipment / End-user Devices",
+        "Equipment / IoT",
+        "Equipment / Industrial equipment",
+        "Software / Development Tools",
+        "Software / CI/CD",
+        "Software / API",
+        "Software / Mobile Apps (for example: Android App, iPhone App)",
+        "Software / Web Apps (for example: React, Spring, Node.js, ROR, PHP apps)",
+        "Software / Web Content (for example: WordPress, Drupal, Prestashop, Magento, etc.)",
+        "TBQ"
+      ]
+    },
+    "environmental_indicators": {
+      "type": "string",
+      "description": "Environmental indicators utilized by the tool",
+      "enum": [
+        "Final Energy consumption (usually in Joule per WattHour)",
+        "Primary Energy consumption (usually in Joule)",
+        "GWP: Global Warming Potential aka the carbon footprint usually in CO2 equivalent",
+        "ADPf (MJ): Abiotic resource Depletion Potential for fossil fuel usually in Antimony (Sb) equivalent",
+        "ADPe (Sbeq): Abiotic resource Depletion Potential for element (minerals, etc.) usually in Antimony (Sb) equivalent",
+        "Water Depletion also called water footprint",
+        "Not Applicable"
+      ]
+    },
+    "functional_units": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Process (System)",
+          "Application",
+          "Team",
+          "Project",
+          "User",
+          "Request (http)",
+          "Feature",
+          "User Story",
+          "Machine",
+          "Room",
+          "Website",
+          "Network Traffic",
+          "TBQ"
+        ]
+      },
+      "description": "Functional units considered in the assessment"
+    },
+    "life_cycle_step": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Extraction",
+          "Manufacturing",
+          "Transport",
+          "Usage",
+          "End of life",
+          "Not Applicable (to be selected if the tool is not based on an LCA)",
+          "TBQ"
+        ]
+      },
+      "description": "Life cycle steps covered by the tool"
+    },
+    "licence": {
+      "type": "string",
+      "description": "Describe the legal environment of the intellectual property of the tool",
+      "enum": [
+        "Open-Source under Apache 2.0 licence",
+        "Open-Source under AGPLv3 licence",
+        "Open-Source under GPLv3 licence",
+        "Open-Source under BSD-3 licence",
+        "Open-Source under an unkownn licence",
+        "Business Source - non permissive licence",
+        "Closed Source / Commercial",
+        "TBQ: To be Qualified"
+      ]
+    },
+    "self-hostable": {
+      "type": "boolean",
+      "description": "Indicates whether the tool can be self-hosted"
+    },
+    "originating_country": {
+      "type": "string",
+      "description": "Country where the tool originated (ISO 3166-1 alpha-3 country code)",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "logo": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the logo of the tool"
+    },
+    "methodology_transparency": {
+      "type": "string",
+      "description": "Level of transparency in the tool's methodology",
+      "enum": [
+        "Undisclosed",
+        "Disclosed only to internal stakeholders or clients",
+        "Fully Disclosed",
+        "TBQ: To Be Qualified"
+      ]
+    },
+    "inside_model": {
+      "type": "object",
+      "description": "Main model being used for the evaluation",
+      "properties": {
+        "model_name": {
+          "type": "string",
+          "description": "name of the model"
+        },
+        "model_site": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the model"
+        },
+        "main_data_source": {
+          "type": "string",
+          "description": "Main data sources used to build the the model"
+        },
+        "creation_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation date of the model"
+        },
+        "model_organization": {
+          "type": "string",
+          "description": "Organization that created the model"
+        },
+        "main_scientific_sources": {
+          "type": "string",
+          "description": "Main scientific sources utilized by the tool"
+        }
+      },
+      "required": [
+        "model_name",
+        "model_site"
+      ]
+    },
+    "main_focus": {
+      "type": "string",
+      "description": "Primary focus area of the tool"
+    },
+    "focus": {
+      "type": "string",
+      "description": "Additional focus areas of the tool"
+    },
+    "quick_description": {
+      "type": "string",
+      "description": "Ideally it should be the description provided by the owner of the tool."
+    },
+    "status": {
+      "type": "string",
+      "description": "Describe where the recording stands in the listing process:",
+      "enum": [
+        "Sandbox",
+        "Draft",
+        "Boavizta reviewed",
+        "Published",
+        "Not to be listed"
+      ]
+    },
+    "last_edit": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of last edit"
+    },
+    "last_editor": {
+      "type": "string",
+      "description": "Editor who made the last edit"
+    }
+  },
+  "required": [
+    "tool_name",
+    "organization",
+    "website",
+    "assessment_type",
+    "perimeters",
+    "environmental_indicators",
+    "functional_units",
+    "life_cycle_step",
+    "licence",
+    "self-hostable",
+    "originating_country",
+    "logo",
+    "methodology_transparency",
+    "inside_model",
+    "main_focus",
+    "focus",
+    "quick_description",
+    "status",
+    "last_edit",
+    "last_editor"
+  ]
+}
