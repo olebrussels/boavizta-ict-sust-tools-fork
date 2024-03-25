@@ -19,3 +19,9 @@ See the draft [schema](docs/ict-sustainailty-tools.draft.schema.json)
 ## draft dataset
 
 See [draft dataset](ict-sustainability-tools.csv)
+
+
+## Example Datami widgets
+
+- A CSV file displayed without any customization [docs/csv-widget-basic.html](docs/csv-widget-basic.html)
+- A CSV file displayed with some additional constraints on fields [docs/csv-widget-with-constraints.html](docs/csv-widget-with-constraints.html).
