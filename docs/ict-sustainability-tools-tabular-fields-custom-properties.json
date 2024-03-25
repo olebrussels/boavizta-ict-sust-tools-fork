@@ -55,51 +55,6 @@
     {
       "name" : "originating_country"
 
-    },
-    {
-      "name" : "logo",
-      "subtype": "link"
-    },
-    {
-      "name": "methodology_transparency"
-    },
-    {
-      "name": "inside_model"
-    },
-    {
-      "name": "model_site",
-      "subtype": "link"
-    },
-    {
-      "name": "main_data_source"
-    },
-    {
-      "name": "model_creation_date"
-    },
-    {
-      "name": "model_organization"
-    },
-    {
-      "name": "main_scientific_sources"
-    },
-    {
-      "name": "main_focus"
-    },
-    {
-      "name": "focus"
-    },
-    {
-      "name": "quick_description"
-    },
-    {
-      "name": "status"
-    },
-    {
-      "name": "last_edit"
-
-    },
-    {
-      "name": "last_editor"
     }
 
     
