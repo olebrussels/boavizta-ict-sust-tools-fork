@@ -19,6 +19,25 @@
       "subtype": "tags",
       "tagSeparator": ",",
       "bgColor": "green"
+    },
+    {
+      "name": "perimeters",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor": "blue"
+    },
+    {
+      "name" : "environmental_indicators",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor": "yellow"
+    },
+    {
+      "name" : "functional_units",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor": "grey"
     }
+
   ]
 }
