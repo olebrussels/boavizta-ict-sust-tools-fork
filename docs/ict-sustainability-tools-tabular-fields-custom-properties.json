@@ -48,13 +48,12 @@
      
     },
     {
-      "name" : "self-hostable",
-      "type": "boolean"
+      "name" : "self-hostable"
+
 
     },
     {
-      "name" : "originating_country",
-      "type": "boolean"
+      "name" : "originating_country"
 
     },
     {
@@ -63,10 +62,9 @@
     },
     {
       "name": "methodology_transparency",
-      "type": "string"
     },
     {
-      "name": "model_name"
+      "name": "inside_model"
     },
     {
       "name": "model_site",

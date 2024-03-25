@@ -154,7 +154,7 @@
       ]
     },
     {
-      "name": "model_name",
+      "name": "inside_model",
       "type": "string",
       "description": "name of the model"
     },
