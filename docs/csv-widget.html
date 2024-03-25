@@ -8,7 +8,7 @@
 <p>My first paragraph.</p>
 
 
-<h1>A CSV file</h1>
+<h1>A CSV file without any customization</h1>
 <!-- DATAMI - contribute with GIT ...but without minding it -->
 <!-- An open source widget coded with 🤍  by the tech cooperative multi : https://multi.coop -->
 
@@ -22,6 +22,19 @@
 
 <!-- DATAMI WIDGET'S APP.JS SCRIPT -->
 <script src="https://datami-widget.multi.coop/js/app.js" type="text/javascript" defer></script>
+
+<h1>A CSV file without any a schema</h1>
+<datami-file
+  title="Liste des coopératives de la tech en France"
+  gitfile="https://github.com/demeringo/ict-sustainability-tools/blob/dev/ict-sustainability-tools.csv"
+  options='{
+ 
+  "schema": {
+    "file": "https://github.com/demeringo/ict-sustainability-tools/blob/dev/ict-sustainability-tools-tabular-schema.json"
+  }
+  }'
+  >
+  </datami-file>
 
 
 </body>

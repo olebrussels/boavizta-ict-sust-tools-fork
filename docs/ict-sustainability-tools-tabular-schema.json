@@ -1,0 +1,35 @@
+{
+  "fields": [
+    {
+      "name": "tool_name",
+      "title": "tool_name",
+      "description": "The tool must have a well identified name and not being just an item in the menu of a bigger tool (e.g. not the “sustainability check” option in a development tool)",
+      "type": "string"
+    },
+    {
+      "name": "organization",
+      "title": "organization",
+      "description": "The legal entity having the intellectual property of the tool.",
+      "type": "string"
+    },
+    {
+      "name": "website",
+      "description": "The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionalities, its licensing, a.s.o . Required format is a URL.",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name" : "assessment_type",
+      "description": "Type of assessment the tool is designed for",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "Best practices",
+          "Evaluation",
+          "Measure",
+          "TBQ"
+        ]
+      }
+    }
+  ]
+}
