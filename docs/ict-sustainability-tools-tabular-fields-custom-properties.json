@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "name": "tool_name",
+      "sticky": true,
+      "primaryKey": true,
+      "maxLength": 50
+    },
+    {
+      "name": "organization",
+      "maxLength": 50
+    },
+    {
+      "name": "website",
+      "subtype": "link"
+    },
+    {
+      "name": "assessment_type",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor": "green"
+    }
+  ]
+}
