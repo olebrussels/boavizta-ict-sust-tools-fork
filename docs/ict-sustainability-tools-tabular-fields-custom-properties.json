@@ -37,7 +37,74 @@
       "subtype": "tags",
       "tagSeparator": ",",
       "bgColor": "grey"
+    },
+    {
+      "name" : "life_cycle_step",
+      "subtype": "tags",
+      "tagSeparator": ","
+    },
+    {
+      "name" : "licence"
+     
+    },
+    {
+      "name" : "self-hostable",
+      "type": "boolean"
+
+    },
+    {
+      "name" : "originating_country",
+      "type": "boolean"
+
+    },
+    {
+      "name" : "logo",
+      "subtype": "link"
+    },
+    {
+      "name": "methodology_transparency",
+      "type": "string"
+    },
+    {
+      "name": "model_name"
+    },
+    {
+      "name": "model_site",
+      "subtype": "link"
+    },
+    {
+      "name": "main_data_source"
+    },
+    {
+      "name": "model_creation_date"
+    },
+    {
+      "name": "model_organization"
+    },
+    {
+      "name": "main_scientific_sources"
+    },
+    {
+      "name": "main_focus"
+    },
+    {
+      "name": "focus"
+    },
+    {
+      "name": "quick_description"
+    },
+    {
+      "name": "status"
+    },
+    {
+      "name": "last_edit"
+
+    },
+    {
+      "name": "last_editor"
     }
+
+    
 
   ]
 }
