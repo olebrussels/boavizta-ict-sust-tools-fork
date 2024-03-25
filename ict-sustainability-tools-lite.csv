@@ -1,0 +1,59 @@
+tool_name,organization,website,assessment_type
+API Green Score,"Groupe Rocher, Loreal",https://github.com/API-Green-Score/APIGreenScore,BestPractices
+Boagent,Boavizta,https://github.com/Boavizta/boagent,Evaluation
+BoaviztAPI,Boavizta,https://doc.api.boavizta.org/,Evaluation
+CO2.js,Green Web Foundation,https://www.thegreenwebfoundation.org/co2-js/,Evaluation
+CO2Scope,Easyvirt,https://www.co2scope.com/,"Evaluation,Measure"
+Calculator Green Algorithms,"Lannelongue, L., Grealey, J., Inouye, M",http://calculator.green-algorithms.org/,Evaluation
+Carbon Aware SDK,Green Software Foundation,https://github.com/Green-Software-Foundation/carbon-aware-sdk,Evaluation
+Carbon Facts,Qarnot,https://qarnot.com/en/low-carbon,Evaluation
+Carbon Impact,Dynatrace,https://www.dynatrace.com/hub/detail/carbon-impact/,Evaluation
+Carbonalyzer,The Shift Project,https://theshiftproject.org/en/carbonalyser-browser-extension/,Evaluation
+Carbonifer,Carbonifer,https://carbonifer.io/,Evaluation
+Cloud Carbon Footprint,Thoughtworks,https://www.cloudcarbonfootprint.org/,Evaluation
+Cloud-Scanner,Boavizta,https://boavizta.github.io/cloud-scanner/,Evaluation
+Cloud-assess,Resilio / Kleis Technology,https://www.cloudassess.org/,Evaluation
+Cloud-carbon,re-cinq,https://github.com/re-cinq/cloud-carbon,Evaluation
+Code Carbon,Data For Good,https://codecarbon.io/,"Measure,Evaluation"
+Digital Carbon Ratings,Sustainable Web Design,https://sustainablewebdesign.org/digital-carbon-ratings/,
+E-footprint,Boavizta,https://pypi.org/project/efootprint/,Evaluation
+Eco2AI,,,
+EcoCI,Green Coding Berlin,,
+EcoCode,Fondation Ecocode,https://ecocode.io,BestPractices
+EcoDiag,EcoInfo CNRS,https://ecoinfo.cnrs.fr/ecodiag-calcul/,
+EcoIndex,Greenit.fr,https://www.ecoindex.fr/,"Evaluation,BestPractices"
+Ecobenchmark-applicationweb-backend,Boavizta,https://github.com/Boavizta/ecobenchmark-applicationweb-backend,"Evaluation,Measure"
+Ecograder,Mightybyte?,https://ecograder.com/,
+Emission Impact Dashboard,Microsoft,,
+Fruggr,Digital4Better,https://www.fruggr.io/,"Evaluation,BestPractices"
+Google Cloud Carbon Footprint,Google,https://cloud.google.com/carbon-footprint,
+Green Web Directory,Green Web Foundation,https://app.greenweb.org/directory/,Evaluation
+GreenPixie,,https://greenpixie.com/,Evaluation
+GreenTrackr,Concerto,https://conserto.pro/greentrackr/,
+Greenbids,Greenbids,https://www.greenbids.ai/,Evaluation
+Greenframe,Marmelab,https://greenframe.io/,Evaluation
+Greenie Web,Greenie Web,https://www.greenieweb.co/,Evaluation
+Greenly,,,
+Greenoco,Greenoco,https://greenoco.io/,Evaluation
+Greenspector,,https://greenspector.com/en/home/,"Evaluation,Measure"
+JoularJX,,https://github.com/joular/joularjx,
+Kepler,Cloud Native Computing Foundation,https://sustainable-computing.io/,Measure
+Lowtus?,,,
+Muchas Glacias,,,
+MyITFootprint,Aguaro,https://aguaro.io/fr,Evaluation
+NumEcoVal,"MTE, Sopra Steria",https://gitlab-forge.din.developpement-durable.gouv.fr/pub/numeco/m4g/numecoeval,Evaluation
+PCM,Intel,https://github.com/intel/pcm,Measure
+Pagiel,Zenika,https://github.com/Zenika/pagiel,"Evaluation,Measure"
+Power API,Romain Rouvoy / Spirals Team / INRIA Lille,https://powerapi.org/,"Measure,Evaluation"
+PowerJoular,Adel Nourredine / Université de Pau et des Pays de l'Adour,https://www.noureddine.org/research/joular/powerjoular,"Measure,Evaluation"
+Powertop,"Arjan van de Ven ",https://github.com/fenrus75/powertop,"Evaluation,Measure,BestPractices"
+ResilioDB,Resilio,https://db.resilio.tech/,Evaluation
+Scaphandre,Hubblo,https://hubblo-org.github.io/scaphandre/,"Measure,Evaluation"
+Sentry Software,Sentry Software,https://www.sentrysoftware.com/,Measure
+SoftAWERE,"SDIA, Boavizta",https://softawere-hackathon.gitlab.io/documentation/,"Evaluation,Measure"
+SoftwareLifecycleEnvImpact,Orange,https://github.com/Orange-OpenSource/SoftwareLifecycleEnvImpact,Evaluation
+Sopht,Sopht,https://sopht.com/,Evaluation
+Tanaguru Engine,Tanaguru,https://www.tanaguru.com/en/open-source-tools-tanaguru/,
+Verdikt,Verdikt,https://verdikt.io/,
+WeNR,ISIT,https://wenr.isit-europe.org/,Evaluation
+greenframe-cli,Marmelab,https://github.com/marmelab/greenframe-cli,Evaluation
