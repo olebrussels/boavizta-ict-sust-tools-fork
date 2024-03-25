@@ -10,18 +10,36 @@ It defines a data model that can be used to build an inventory of the tools.
 > [!WARNING]
 > The data model is still very drafty and is expected to evolve.
 
+## Implementation
 
+### General design
 
-## draft json schema
+1. data stored in GIT to benefit from review / approval workflows (and potential automatic validation of format)
+2. data update can be proposed by end users in 2 ways:
+   1. A web frontend that allow to view the data and propose edition
+   2. Pull requests directly against the data file (git)
+
+We intend to use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to display data and allow edition.
+
+### Data format
+
+- [x] We store data as a csv file.
+- [ ] add specific descriptors as table-format to describe and validate constraints on the fields. 
+- [ ] implement frictionless-ci or other automatic validation regarding format as a github action [frictionless-ci | Frictionless Repository](https://repository.frictionlessdata.io/index.html)
+
+> [!NOTE]
+> Our preferred format would have been to have a structured (json) file, described by a json schema. However json edition is not well supported by Datami yet. (JSON data is displayed as json tree which is not very user friendly for non technical users). So for the time being we fall back to using a less structured CSV dataset.
+
+### draft json schema
 
 See the draft [schema](docs/ict-sustainailty-tools.draft.schema.json)
 
-## draft dataset
+### draft dataset
 
 See [draft dataset](ict-sustainability-tools.csv)
 
 
-## Example Datami widgets
+### Example Datami widgets
 
 - A CSV file displayed without any customization [docs/csv-widget-basic.html](docs/csv-widget-basic.html)
 - A CSV file displayed with some additional constraints on fields [docs/csv-widget-with-constraints.html](docs/csv-widget-with-constraints.html).
