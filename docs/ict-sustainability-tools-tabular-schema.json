@@ -72,9 +72,8 @@
     },
     {
       "name": "functional_units",
-      "type": "array",
-      "items": {
-        "type": "string",
+      "type": "string",
+      "constraints": {
         "enum": [
           "Process (System)",
           "Application",
@@ -96,9 +95,8 @@
     {
       "name": "life_cycle_step",
       "description": "Life cycle steps covered by the tool",
-      "type": "array",
-      "items": {
-        "type": "string",
+      "type": "string",
+      "constraints": {
         "enum": [
           "Extraction",
           "Manufacturing",
@@ -146,12 +144,14 @@
       "name": "methodology_transparency",
       "type": "string",
       "description": "Level of transparency in the tool's methodology",
-      "enum": [
-        "Undisclosed",
-        "Disclosed only to internal stakeholders or clients",
-        "Fully Disclosed",
-        "TBQ: To Be Qualified"
-      ]
+      "constraints": {
+        "enum": [
+          "Undisclosed",
+          "Disclosed only to internal stakeholders or clients",
+          "Fully Disclosed",
+          "TBQ: To Be Qualified"
+        ]
+      }
     },
     {
       "name": "inside_model",
@@ -204,13 +204,15 @@
       "name": "status",
       "type": "string",
       "description": "Describe where the recording stands in the listing process:",
-      "enum": [
-        "Sandbox",
-        "Draft",
-        "Boavizta reviewed",
-        "Published",
-        "Not to be listed"
-      ]
+      "constraints": {
+        "enum": [
+          "Sandbox",
+          "Draft",
+          "Boavizta reviewed",
+          "Published",
+          "Not to be listed"
+        ]
+      }
     },
     {
       "name": "last_edit",
