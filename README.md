@@ -24,7 +24,7 @@ We intend to use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to
 ### Data format
 
 - [x] We store data as a csv file.
-- [ ] add specific descriptors as table-format to describe and validate constraints on the fields. 
+- [ ] add specific descriptors as table-format to describe and validate constraints on the fields.
 - [ ] implement frictionless-ci or other automatic validation regarding format as a github action [frictionless-ci | Frictionless Repository](https://repository.frictionlessdata.io/index.html)
 
 > [!NOTE]
@@ -41,5 +41,5 @@ See [draft dataset](ict-sustainability-tools.csv)
 
 ### Example Datami widgets
 
-- A CSV file displayed without any customization [docs/csv-widget-basic.html](examples/csv/csv-widget-basic.html)
-- A CSV file displayed with some additional constraints on fields [docs/csv-widget-with-constraints.html](examples/csv/csv-widget-with-constraints.html).
+- A CSV file displayed without any customization [examples/csv/csv-widget-basic.html](examples/csv/csv-widget-basic.html)
+- A CSV file displayed with some additional constraints on fields [examples/csv/csv-widget-with-constraints.html](examples/csv/csv-widget-with-constraints.html).
