@@ -1,0 +1,107 @@
+{
+  "fields": [
+    {
+      "name": "tool_name",
+      "sticky": true,
+      "primaryKey": true,
+      "maxLength": 50
+    },
+    {
+      "name": "organization",
+      "maxLength": 50
+    },
+    {
+      "name": "website",
+      "subtype": "link"
+    },
+    {
+      "name": "assessment_type",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor": "green"
+    },
+    {
+      "name": "perimeters",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor": "blue"
+    },
+    {
+      "name" : "environmental_indicators",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor": "yellow"
+    },
+    {
+      "name" : "functional_units",
+      "subtype": "tags",
+      "tagSeparator": ",",
+      "bgColor": "grey"
+    },
+    {
+      "name" : "life_cycle_step",
+      "subtype": "tags",
+      "tagSeparator": ","
+    },
+    {
+      "name" : "licence"
+     
+    },
+    {
+      "name" : "self-hostable"
+
+
+    },
+    {
+      "name" : "originating_country"
+
+    }
+    ,
+    {
+      "name" : "logo",
+      "subtype": "link"
+    },
+    {
+      "name": "methodology_transparency"
+    },
+    {
+      "name": "inside_model"
+    },
+    {
+      "name": "model_site",
+      "subtype": "link"
+    },
+    {
+      "name": "main_data_source"
+    },
+    {
+      "name": "model_creation_date"
+    },
+    {
+      "name": "model_organization"
+    },
+    {
+      "name": "main_scientific_sources"
+    },
+    {
+      "name": "main_focus"
+    },
+    {
+      "name": "focus"
+    },
+    {
+      "name": "quick_description"
+    },
+    {
+      "name": "status"
+    },
+    {
+      "name": "last_edit"
+
+    },
+    {
+      "name": "last_editor"
+    }
+
+  ]
+}

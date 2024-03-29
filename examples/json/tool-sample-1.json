@@ -1,0 +1,39 @@
+
+
+{
+  "tool_name": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+  "organization": "ABCDEFGHIJKLMNOPQRS",
+  "website": "ABCDEFGHIJ",
+  "assessment_type": "Measure",
+  "perimeters": "Equipment / IoT",
+  "environmental_indicators": "GWP: Global Warming Potential aka the carbon footprint usually in CO2 equivalent",
+  "functional_units": [
+    "User",
+    "Team",
+    "Project"
+  ],
+  "life_cycle_step": [
+    "Not Applicable (to be selected if the tool is not based on an LCA)",
+    "Manufacturing"
+  ],
+  "licence": "Open-Source under BSD-3 licence",
+  "self-hostable": true,
+  "originating_country": "EKZ",
+  "logo": "ABCDEFGHIJKLMNO",
+  "methodology_transparency": "Disclosed only to internal stakeholders or clients",
+  "inside_model": {
+    "model_name": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+    "model_site": "ABCDEFGHIJKL",
+    "main_data_source": "ABCDEFGHIJKLMNOPQRSTUVW",
+    "creation_date": "ABCDEFGHIJKLMNOPQRST",
+    "model_organization": "ABCDEFGHIJKLMNOPQRSTUVW",
+    "main_scientific_sources": "ABCDEFGHIJKLMNOP"
+  },
+  "main_focus": "ABCDEFGHIJK",
+  "focus": "ABCDEFGHIJ",
+  "quick_description": "ABCDEFGHIJKLMNOPQRSTU",
+  "status": "Draft",
+  "last_edit": "ABCDEFGHIJKLMNO",
+  "last_editor": "ABCDEFGHIJKLMNOPQRST"
+}
+

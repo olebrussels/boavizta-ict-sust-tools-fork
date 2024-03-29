@@ -1,0 +1,229 @@
+{
+  "fields": [
+    {
+      "name": "tool_name",
+      "title": "tool_name",
+      "description": "The tool must have a well identified name and not being just an item in the menu of a bigger tool (e.g. not the “sustainability check” option in a development tool)",
+      "type": "string"
+    },
+    {
+      "name": "organization",
+      "title": "organization",
+      "description": "The legal entity having the intellectual property of the tool.",
+      "type": "string"
+    },
+    {
+      "name": "website",
+      "description": "The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionalities, its licensing, a.s.o . Required format is a URL.",
+      "type": "string",
+      "format": "uri"
+    },
+    {
+      "name": "assessment_type",
+      "description": "Type of assessment the tool is designed for",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "Best practices",
+          "Evaluation",
+          "Measure",
+          "TBQ"
+        ]
+      }
+    },
+    {
+      "name": "perimeters",
+      "description": "What is the general scope covered by the tool. Several values are possible.",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "Global / Information System",
+          "Infra / Datacenter",
+          "Infra / Cloud (for example: GCP, AWS, Azure, OVH Cloud)",
+          "Infra / Network",
+          "Equipment / End-user Devices",
+          "Equipment / IoT",
+          "Equipment / Industrial equipment",
+          "Software / Development Tools",
+          "Software / CI/CD",
+          "Software / API",
+          "Software / Mobile Apps (for example: Android App, iPhone App)",
+          "Software / Web Apps (for example: React, Spring, Node.js, ROR, PHP apps)",
+          "Software / Web Content (for example: WordPress, Drupal, Prestashop, Magento, etc.)",
+          "TBQ"
+        ]
+      }
+    },
+    {
+      "name": "environmental_indicators",
+      "type": "string",
+      "description": "Environmental indicators utilized by the tool",
+      "constraints": {
+        "enum": [
+          "Final Energy consumption (usually in Joule per WattHour)",
+          "Primary Energy consumption (usually in Joule)",
+          "GWP: Global Warming Potential aka the carbon footprint usually in CO2 equivalent",
+          "ADPf (MJ): Abiotic resource Depletion Potential for fossil fuel usually in Antimony (Sb) equivalent",
+          "ADPe (Sbeq): Abiotic resource Depletion Potential for element (minerals, etc.) usually in Antimony (Sb) equivalent",
+          "Water Depletion also called water footprint",
+          "Not Applicable"
+        ]
+      }
+    },
+    {
+      "name": "functional_units",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "Process (System)",
+          "Application",
+          "Team",
+          "Project",
+          "User",
+          "Request (http)",
+          "Feature",
+          "User Story",
+          "Machine",
+          "Room",
+          "Website",
+          "Network Traffic",
+          "TBQ"
+        ]
+      },
+      "description": "Functional units considered in the assessment"
+    },
+    {
+      "name": "life_cycle_step",
+      "description": "Life cycle steps covered by the tool",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "Extraction",
+          "Manufacturing",
+          "Transport",
+          "Usage",
+          "End of life",
+          "Not Applicable (to be selected if the tool is not based on an LCA)",
+          "TBQ"
+        ]
+      }
+    },
+    {
+      "name": "license",
+      "type": "string",
+      "description": "Describe the legal environment of the intellectual property of the tool",
+      "enum": [
+        "Open-Source under Apache 2.0 licence",
+        "Open-Source under AGPLv3 licence",
+        "Open-Source under GPLv3 licence",
+        "Open-Source under BSD-3 licence",
+        "Open-Source under an unknown licence",
+        "Business Source - non permissive licence",
+        "Closed Source / Commercial",
+        "TBQ: To be Qualified"
+      ]
+    },
+    {
+      "name": "self-hostable",
+      "type": "boolean",
+      "description": "Indicates whether the tool can be self-hosted"
+    },
+    {
+      "name": "originating_country",
+      "type": "string",
+      "description": "Country where the tool originated (ISO 3166-1 alpha-3 country code)",
+      "pattern": "^[A-Z]{3}$"
+    },
+    {
+      "name": "logo",
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the logo of the tool"
+    },
+    {
+      "name": "methodology_transparency",
+      "type": "string",
+      "description": "Level of transparency in the tool's methodology",
+      "constraints": {
+        "enum": [
+          "Undisclosed",
+          "Disclosed only to internal stakeholders or clients",
+          "Fully Disclosed",
+          "TBQ: To Be Qualified"
+        ]
+      }
+    },
+    {
+      "name": "inside_model",
+      "type": "string",
+      "description": "name of the model"
+    },
+    {
+      "name": "model_site",
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the model"
+    },
+    {
+      "name": "main_data_source",
+      "type": "string",
+      "description": "Main data sources used to build the the model"
+    },
+    {
+      "name": "model_creation_date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation date of the model"
+    },
+    {
+      "name": "model_organization",
+      "type": "string",
+      "description": "Organization that created the model"
+    },
+    {
+      "name": "main_scientific_sources",
+      "type": "string",
+      "description": "Main scientific sources utilized by the tool"
+    },
+    {
+      "name": "main_focus",
+      "type": "string",
+      "description": "Primary focus area of the tool"
+    },
+    {
+      "name": "focus",
+      "type": "string",
+      "description": "Additional focus areas of the tool"
+    },
+    {
+      "name": "quick_description",
+      "type": "string",
+      "description": "Ideally it should be the description provided by the owner of the tool."
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Describe where the recording stands in the listing process:",
+      "constraints": {
+        "enum": [
+          "Sandbox",
+          "Draft",
+          "Boavizta reviewed",
+          "Published",
+          "Not to be listed"
+        ]
+      }
+    },
+    {
+      "name": "last_edit",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of last edit"
+    },
+    {
+      "name": "last_editor",
+      "type": "string",
+      "description": "Editor who made the last edit"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+
+
+{
+  "tool_name": "ABCDEFGHIJKLMNO",
+  "organization": "ABCDEFGHIJKLMNOP",
+  "website": "ABCDEFGHIJKLMNOPQRSTUV",
+  "assessment_type": "TBQ",
+  "perimeters": "Software / API",
+  "environmental_indicators": "Primary Energy consumption (usually in Joule)",
+  "functional_units": [
+    "Project",
+    "Project",
+    "Application",
+    "Feature",
+    "Room"
+  ],
+  "life_cycle_step": [
+    "Manufacturing",
+    "End of life",
+    "Not Applicable (to be selected if the tool is not based on an LCA)",
+    "Transport",
+    "Transport",
+    "Transport",
+    "Manufacturing",
+    "Usage"
+  ],
+  "licence": "Business Source - non permissive licence",
+  "self-hostable": false,
+  "originating_country": "KSB",
+  "logo": "ABCDEFGHIJKLMNOPQRSTUVWX",
+  "methodology_transparency": "Fully Disclosed",
+  "inside_model": {
+    "model_name": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "model_site": "ABCDEFGHIJKLMNOPQRS",
+    "main_data_source": "ABCDEFGHIJKLMNOPQRSTUV",
+    "creation_date": "ABCDEFGHIJKLMNOPQR",
+    "model_organization": "ABCDEFGHIJK",
+    "main_scientific_sources": "ABCDEFGHIJ"
+  },
+  "main_focus": "ABCDEFGH",
+  "focus": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+  "quick_description": "ABCD",
+  "status": "Published",
+  "last_edit": "ABCD",
+  "last_editor": "ABCDEFG"
+}
+
