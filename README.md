@@ -21,6 +21,8 @@ It defines a data model that can be used to build an inventory of the tools.
 
 We intend to use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to display data and allow edition.
 
+![Components of datami widget](doc/datami-components.excalidraw.png)
+
 ### Data format
 
 - [x] We store data as a csv file.
