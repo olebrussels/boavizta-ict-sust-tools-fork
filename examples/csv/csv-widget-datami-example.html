@@ -6,7 +6,10 @@
 <p>My first paragraph.</p>
 
 
-<h1>A CSV file</h1>
+<h1>A CSV file using Datami provided data example</h1>
+
+This is fully configured widget with some customizations to display data as cards and constraint field values.
+
 <!-- DATAMI - contribute with GIT ...but without minding it -->
 <!-- An open source widget coded with 🤍  by the tech cooperative multi : https://multi.coop -->
 
@@ -102,39 +105,7 @@
 <!-- DATAMI WIDGET'S APP.JS SCRIPT -->
 <script src="https://datami-widget.multi.coop/js/app.js" type="text/javascript" defer></script>
 
-<h1>A JSON file</h1>
 
-  <!-- Example for loading and contribute to a distant .csv file from Github -->
-  <datami-file
-    title="Datami for gitlab file - json" 
-    gitfile="https://github.com/demeringo/ict-sustainability-tools/blob/dev/docs/tool-sample-1.json" 
-    options='{
-      "separator":","
-      "pagination":{
-        "itemsPerPage":5
-      },
-      "cardsview": {
-        "activate": true,
-        "default": true
-      },
-      "cardsdetail": true,
-      "cardssettings": {
-        "mini": {
-          "name": {"position": "title"},
-          "surname": {"position": "title"},
-          "profession": {"position": "resume"}
-        },
-        "detail": {
-          "name": {"position": "title"},
-          "surname": {"position": "title"},
-          "profession": {"position": "desription"}
-        }
-      }
-    }' 
-    usertoken="MY-USER-TOKEN or GHOST-USER-TOKEN"
-    locale="en"
-    debug="false"
-  ></datami-file>
 
 </body>
 </html> 

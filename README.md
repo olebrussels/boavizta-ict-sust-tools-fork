@@ -32,7 +32,7 @@ We intend to use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to
 
 ### draft json schema
 
-See the draft [schema](docs/ict-sustainailty-tools.draft.schema.json)
+See the draft [schema](examples/json/ict-sustainailty-tools.draft.schema.json)
 
 ### draft dataset
 
@@ -41,5 +41,5 @@ See [draft dataset](ict-sustainability-tools.csv)
 
 ### Example Datami widgets
 
-- A CSV file displayed without any customization [docs/csv-widget-basic.html](docs/csv-widget-basic.html)
-- A CSV file displayed with some additional constraints on fields [docs/csv-widget-with-constraints.html](docs/csv-widget-with-constraints.html).
+- A CSV file displayed without any customization [docs/csv-widget-basic.html](examples/csv/csv-widget-basic.html)
+- A CSV file displayed with some additional constraints on fields [docs/csv-widget-with-constraints.html](examples/csv/csv-widget-with-constraints.html).
