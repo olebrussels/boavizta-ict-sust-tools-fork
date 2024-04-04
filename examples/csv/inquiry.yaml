@@ -1,0 +1,3 @@
+tasks:
+  - path: ict-sustainability-tools-sample-data.csv
+    schema: ict-sustainability-tools-tabular-schema.json
