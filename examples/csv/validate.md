@@ -1,0 +1,1 @@
+frictionless validate inquiry.yaml
