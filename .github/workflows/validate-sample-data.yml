@@ -20,4 +20,4 @@ jobs:
       - name: Validate data
         uses: frictionlessdata/repository@v2
         with:
-          inquiry: examples/csv/light-list.resource.yaml
+          resources: examples/csv/light-list.resource.yaml
