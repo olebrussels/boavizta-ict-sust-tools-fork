@@ -34,8 +34,19 @@ schema:
       type: string
     - name: life_cycle_step
       type: string
-    - name: licence
+    - name: license
       type: string
+      description: Describe the legal environment of the intellectual property of the
+        tool
+      enum:
+      - Open-Source under Apache 2.0 licence
+      - Open-Source under AGPLv3 licence
+      - Open-Source under GPLv3 licence
+      - Open-Source under BSD-3 licence
+      - Open-Source under an unknown licence
+      - Business Source - non permissive licence
+      - Closed Source / Commercial
+      - 'TBQ: To be Qualified'
     - name: self-hostable
       type: string
     - name: originating_country
