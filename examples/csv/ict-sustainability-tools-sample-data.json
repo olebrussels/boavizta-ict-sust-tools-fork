@@ -1,0 +1,25 @@
+{
+  "path": "ict-sustainability-tools-sample-data.csv",
+  "name": "valid",
+  "profile": "tabular-data-resource",
+  "scheme": "file",
+  "format": "csv",
+  "hashing": "md5",
+  "encoding": "utf-8",
+  "schema": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "integer"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "azer",
+        "type": "string"
+      }
+    ]
+  }
+}

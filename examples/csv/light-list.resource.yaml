@@ -1,0 +1,73 @@
+name: light-list
+type: table
+path: light-list.csv
+scheme: file
+format: csv
+mediatype: text/csv
+encoding: iso8859-1
+schema:
+  fields:
+    - name: tool_name
+      title: tool_name
+      description: The tool must have a well identified name and not being just an item
+        in the menu of a bigger tool (e.g. not the “sustainability check” option in a
+        development tool)
+      type: string
+    - name: organization
+      type: string
+    - name: website
+      type: string
+    - name: assessment_type
+      description: Type of assessment the tool is designed for
+      type: string
+      constraints:
+        enum:
+        - Best practices
+        - Evaluation
+        - Measure
+        - TBQ
+    - name: perimeters
+      type: string
+    - name: environmental_indicators
+      type: string
+    - name: functional_Units
+      type: string
+    - name: life_cycle_step
+      type: string
+    - name: license
+      type: string
+      description: Describe the legal environment of the intellectual property of the
+        tool
+      enum:
+      - Open-Source under Apache 2.0 licence
+      - Open-Source under AGPLv3 licence
+      - Open-Source under GPLv3 licence
+      - Open-Source under BSD-3 licence
+      - Open-Source under an unknown licence
+      - Business Source - non permissive licence
+      - Closed Source / Commercial
+      - 'TBQ: To be Qualified'
+    - name: self-hostable
+      type: string
+    - name: originating_country
+      type: string
+    - name: logo
+      type: string
+    - name: methodology_transparency
+      type: string
+    - name: inside_model
+      type: string
+    - name: main_scientific_sources
+      type: integer
+    - name: main_focus
+      type: string
+    - name: focus
+      type: string
+    - name: quick_description
+      type: string
+    - name: status
+      type: string
+    - name: last_edit
+      type: date
+    - name: last_editor
+      type: string
