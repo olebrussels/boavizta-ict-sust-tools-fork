@@ -10,6 +10,27 @@ It defines a data model that can be used to build an inventory of the tools.
 > [!WARNING]
 > The data model is still very drafty and is expected to evolve.
 
+- [🗺️ Mapping of the ICT Sustainability Tools Landscape](#️-mapping-of-the-ict-sustainability-tools-landscape)
+  - [Repository content](#repository-content)
+  - [Implementation](#implementation)
+    - [General design](#general-design)
+      - [Usage flow](#usage-flow)
+      - [Components](#components)
+    - [Data format](#data-format)
+    - [draft dataset](#draft-dataset)
+    - [Example Datami widgets](#example-datami-widgets)
+
+## Repository content
+
+- doc/ : documentation
+  - doc/adr/: architecture decision records if any
+- ictst/: csv data, models and widgets configuration to permit edition of the csv data
+  - ictst/data: the main CSV file + configuration file for data validation in (Command line or through github actions)
+  - ictst/model: the data model used to configure the widget
+  - ictst/widget: the widget code and additional fields / vues configuration
+- .github/workflows : automatic data validation workflow and other publishing workflow
+- old-examples/ : all examples that were initialy part of this repository but are now abandoned
+
 ## Implementation
 
 ### General design
