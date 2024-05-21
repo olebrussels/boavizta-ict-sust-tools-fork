@@ -14,34 +14,41 @@ It defines a data model that can be used to build an inventory of the tools.
 
 ### General design
 
-1. data stored in GIT to benefit from review / approval workflows (and potential automatic validation of format)
-2. data update can be proposed by end users in 2 ways:
-   1. A web frontend that allow to view the data and propose edition
-   2. Pull requests directly against the data file (git)
+We use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to display data and allow edition of a file stored in Github. Even if end user is not familiar with Git.
 
-We intend to use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to display data and allow edition.
+1. data is stored in GIT to benefit from historisation, review and approval workflows (and potential automatic validation of format)
+2. data update can be proposed by end users in 2 ways:
+   1.  A web frontend that allow to view the data and propose edition => This is the **preferred** solution using Datami widget
+   2. Pull requests directly against the data file (git) => **Less preferred** (mainly for maintainers of people familiar with Git)
+
+#### Usage flow
+
+![usage flow](doc/usage-flow.excalidraw.png)
+
+
+#### Components
 
 ![Components of datami widget](doc/datami-components.excalidraw.png)
+
+> [!WARNING]
+> The data validation and the data edition (widget) are configured using different set of files or data models.
+> These data model use different syntax but have to be kept in sync manually !
 
 ### Data format
 
 - [x] We store data as a csv file.
-- [ ] add specific descriptors as table-format to describe and validate constraints on the fields.
-- [ ] implement frictionless-ci or other automatic validation regarding format as a github action [frictionless-ci | Frictionless Repository](https://repository.frictionlessdata.io/index.html)
+- [x] add specific descriptors as table-format to describe and validate constraints on the fields.
+- [x] implement frictionless-ci or other automatic validation regarding format as a github action [frictionless-ci | Frictionless Repository](https://repository.frictionlessdata.io/index.html)
 
 > [!NOTE]
 > Our preferred format would have been to have a structured (json) file, described by a json schema. However json edition is not well supported by Datami yet. (JSON data is displayed as json tree which is not very user friendly for non technical users). So for the time being we fall back to using a less structured CSV dataset.
 
-### draft json schema
-
-See the draft [schema](examples/json/ict-sustainailty-tools.draft.schema.json)
-
 ### draft dataset
 
-See [draft dataset](ict-sustainability-tools.csv)
+See [draft dataset](old-examples/ict-sustainability-tools.csv)
 
 
 ### Example Datami widgets
 
-- A CSV file displayed without any customization [examples/csv/csv-widget-basic.html](examples/csv/csv-widget-basic.html)
-- A CSV file displayed with some additional constraints on fields [examples/csv/csv-widget-with-constraints.html](examples/csv/csv-widget-with-constraints.html).
+- A CSV file displayed without any customization [old-examples/csv/csv-widget-basic.html](old-examples/csv/csv-widget-basic.html)
+- A CSV file displayed with some additional constraints on fields [old-examples/csv/csv-widget-with-constraints.html](old-examples/csv/csv-widget-with-constraints.html).
