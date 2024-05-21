@@ -1,0 +1,43 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "sticky": true,
+      "primaryKey": true,
+      "maxLength": 50
+    },
+    {
+      "name": "url",
+      "subtype": "link"
+    },
+    {
+      "name": "status",
+      "subtype": "tag"
+    },
+    {
+      "name": "languages",
+      "subtype": "tags",
+      "tagSeparator": "+"
+    },
+    {
+      "name": "comment",
+      "subtype": "longtext",
+      "maxLength": 250,
+      "longtextOptions": {
+        "breakSeparator": "//",
+        "bulletSeparator": "- "
+      }
+    },
+    {
+      "name": "review",
+      "subtype": "longtext",
+      "maxLength": 250
+    },
+    {
+      "name": "complex_tags_values",
+      "subtype": "tags",
+      "tagSeparator": "+"
+    }
+  ]
+}
+    

@@ -1,0 +1,37 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "title": "the projet name",
+      "type": "string"
+    },
+    {
+      "name": "url",
+      "title": "the project url",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "started",
+          "ready",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "name": "languages",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "rust",
+          "python",
+          "docker",
+          "other tek"
+        ]
+      }
+    }
+  ]
+}
