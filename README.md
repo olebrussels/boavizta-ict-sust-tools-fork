@@ -24,19 +24,23 @@ It defines a data model that can be used to build an inventory of the tools.
 ## Repository content
 
 - doc/ : documentation
-  - doc/adr/: architecture decision records if any
-- ictst/: csv data, models and widgets configuration to permit edition of the csv data
-  - ictst/data: the main CSV file + configuration file for data validation in (Command line or through github actions)
-  - ictst/model: the data model used to configure the widget
-  - ictst/widget: the widget code and additional fields / vues configuration
-- .github/workflows : automatic data validation workflow and other publishing workflow
-- old-examples/ : all examples that were initialy part of this repository but are now abandoned
+  - architecture decision records: [doc/adr/](doc/adr/)
+- ictst
+  - ictst/data
+    - Main data file (CSV): [ictst/data/tools.csv](ictst/data/tools.csv) 
+    - Data validation model: [ictst/data/tools.resources.yaml](ictst/data/tools.resources.yaml): Used in command line or via github actions.
+  - ictst/model
+    - data model used to configure the widget: [ictst/model/tools.frictionless-table-schema.json](ictst/model/tools.frictionless-table-schema.json)
+  - ictst/widget:
+    - widget html: [ictst/widget/tools-widget.html](ictst/widget/tools-widget.html)
+    - additional fields configuration for the widget [ictst/widget/tools.fields-custom-properties.json](ictst/widget/tools.fields-custom-properties.json)
+- .github/workflows : github action to automate the data validation
+- old-examples/: other examples of using Datami
 
 ## Implementation
 
 ### Architecture decisions records / ADRs
 
-- [ADR list](doc/adr/flowChart.md)
 - [All ADRs](doc/adr/)
 
 ### General design

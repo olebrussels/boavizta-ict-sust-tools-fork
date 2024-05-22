@@ -1,0 +1,14 @@
+{
+  "fields": [
+    {
+      "name": "tool_name",
+      "title": "the name of the tool",
+      "type": "string"
+    },
+    {
+      "name": "organization",
+      "title": "the organization behind the tool",
+      "type": "string"
+    }
+  ]
+}

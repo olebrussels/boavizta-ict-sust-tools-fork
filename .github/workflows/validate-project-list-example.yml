@@ -10,14 +10,13 @@ on:
 
 jobs:
 
-  # Validate
-
+  # Validate the example project-list
   validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Validate data
         uses: frictionlessdata/repository@v2
         with:
-          resources: examples/csv/light-list.resource.yaml
+          resources: old-examples/project-list/project-list.resources.yaml

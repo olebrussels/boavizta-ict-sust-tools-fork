@@ -1,0 +1,14 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "sticky": true,
+      "primaryKey": true,
+      "maxLength": 50
+    },
+    {
+      "name": "organization"
+    }
+  ]
+}
+    

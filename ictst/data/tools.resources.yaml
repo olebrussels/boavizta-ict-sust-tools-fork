@@ -1,0 +1,16 @@
+name: tools
+type: table
+path: tools.csv
+scheme: file
+format: csv
+mediatype : text/csv
+encoding: utf-8
+schema:
+  fields:
+    # The tool name
+    - name: tool_name
+      type: string
+    # The name of the organization that produces the tools
+    - name: organization
+      type: string
+   # TODO: Add other fields
