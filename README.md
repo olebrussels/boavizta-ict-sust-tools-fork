@@ -13,6 +13,7 @@ It defines a data model that can be used to build an inventory of the tools.
 - [🗺️ Mapping of the ICT Sustainability Tools Landscape](#️-mapping-of-the-ict-sustainability-tools-landscape)
   - [Repository content](#repository-content)
   - [Implementation](#implementation)
+    - [Architecture decisions records / ADRs](#architecture-decisions-records--adrs)
     - [General design](#general-design)
       - [Usage flow](#usage-flow)
       - [Components](#components)
@@ -33,19 +34,23 @@ It defines a data model that can be used to build an inventory of the tools.
 
 ## Implementation
 
+### Architecture decisions records / ADRs
+
+- [ADR list](doc/adr/flowChart.md)
+- [All ADRs](doc/adr/)
+
 ### General design
 
 We use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to display data and allow edition of a file stored in Github. Even if end user is not familiar with Git.
 
 1. data is stored in GIT to benefit from historisation, review and approval workflows (and potential automatic validation of format)
 2. data update can be proposed by end users in 2 ways:
-   1.  A web frontend that allow to view the data and propose edition => This is the **preferred** solution using Datami widget
+   1. A web frontend that allow to view the data and propose edition => This is the **preferred** solution using Datami widget
    2. Pull requests directly against the data file (git) => **Less preferred** (mainly for maintainers of people familiar with Git)
 
 #### Usage flow
 
 ![usage flow](doc/usage-flow.excalidraw.png)
-
 
 #### Components
 
@@ -68,8 +73,8 @@ We use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to display d
 
 See [draft dataset](old-examples/ict-sustainability-tools.csv)
 
-
 ### Example Datami widgets
 
 - A CSV file displayed without any customization [old-examples/csv/csv-widget-basic.html](old-examples/csv/csv-widget-basic.html)
 - A CSV file displayed with some additional constraints on fields [old-examples/csv/csv-widget-with-constraints.html](old-examples/csv/csv-widget-with-constraints.html).
+- Other examples with more complex validation rules:[GitHub - demeringo/datami-tests: Testing datami widget to edit and validate csv files](https://github.com/demeringo/datami-tests/)
