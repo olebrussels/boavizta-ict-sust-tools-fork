@@ -12,6 +12,7 @@ It defines a data model that can be used to build an inventory of the tools.
 
 - [🗺️ Mapping of the ICT Sustainability Tools Landscape](#️-mapping-of-the-ict-sustainability-tools-landscape)
   - [Repository content](#repository-content)
+  - [How to configure the widget](#how-to-configure-the-widget)
   - [Implementation](#implementation)
     - [Architecture decisions records / ADRs](#architecture-decisions-records--adrs)
     - [General design](#general-design)
@@ -36,6 +37,10 @@ It defines a data model that can be used to build an inventory of the tools.
     - additional fields configuration for the widget [ictst/widget/tools.fields-custom-properties.json](ictst/widget/tools.fields-custom-properties.json)
 - .github/workflows : github action to automate the data validation
 - old-examples/: other examples of using Datami
+
+## How to configure the widget
+
+[How to configure the widget](doc/how-to-configure-widget.md)
 
 ## Implementation
 

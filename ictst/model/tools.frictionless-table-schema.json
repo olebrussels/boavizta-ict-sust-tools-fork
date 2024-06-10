@@ -3,7 +3,18 @@
     {
       "name": "tool_name",
       "title": "the name of the tool",
-      "type": "string"
+      "type": "string",
+      "constraints": [
+        {
+          "required": true
+        },
+        {
+          "minLength": 3
+        }
+      ],
+      "description": "A long description about the field that is named tool_name",
+      "example": "Boavizta API",
+      "format": "A string specifying a format, but not used by the widget"
     },
     {
       "name": "organization",
