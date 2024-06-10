@@ -134,7 +134,9 @@ Use the `tag`vs `tags`(plural) to let the widget know if the field accepts multi
 
 ## TODO
 
-Tag vs tags
+Tag vs tags mention how to manage the separator for multiple values
+
+Explicit that multiline strings are nto supported.
 
 Development flow (step by step)
 
