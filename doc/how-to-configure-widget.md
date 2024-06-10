@@ -4,7 +4,7 @@
   - [1.Configure the table model](#1configure-the-table-model)
     - [Example with just 2 fields](#example-with-just-2-fields)
     - [Restricting allowed values](#restricting-allowed-values)
-  - [2.Configure the display of fields](#2configure-the-display-of-fields)
+  - [2.Configure the display and edition of fields](#2configure-the-display-and-edition-of-fields)
     - [Multi valued vs mono valued inputs](#multi-valued-vs-mono-valued-inputs)
     - [Example](#example)
   - [3.Configure the widget](#3configure-the-widget)
@@ -13,7 +13,7 @@
 Configuring the widget needs 3 steps:
 
 1. configure the table model
-2. configure the display of fields
+2. configure the display/edition of fields
 3. configure the widget (html)
 
 ## 1.Configure the table model
@@ -101,11 +101,13 @@ It does **not** distinguish between mono or multiple values. This is done later 
 
 
 
-## 2.Configure the display of fields
+## 2.Configure the display and edition of fields
 
 We need to configure how the widget displays and let the user edit the fields in a separate file.
 
 Edit ictst/widget/tools.fields-custom-properties.json
+
+>[!NOTE] The configuration of cards view (how content is displayed as cards insted of table is done separately.
 
 ### Multi valued vs mono valued inputs
 
@@ -134,13 +136,13 @@ Use the `tag`vs `tags`(plural) to let the widget know if the field accepts multi
 
 ## TODO
 
-Tag vs tags mention how to manage the separator for multiple values
+Things that remain to be explained
 
-Explicit that multiline strings are nto supported.
-
-Development flow (step by step)
-
-Example projet
-
-Hosting constraints
-
+- [x] Tag vs tags mention how to manage the separator for multiple values
+- [ ] Configuration of the card view
+- [ ] Explicit that multiline strings are not easily supported.
+- [ ] Development flow (how to edit / test step by step)
+- [ ] Example projet
+- [ ] Hosting / deployment
+- [ ] Github PAT configuration
+- [ ] How to validate in data CI
