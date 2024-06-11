@@ -5,9 +5,11 @@
     - [Example with just 2 fields](#example-with-just-2-fields)
     - [Restricting allowed values](#restricting-allowed-values)
   - [2.Configure the display and edition of fields](#2configure-the-display-and-edition-of-fields)
-    - [Multi valued vs mono valued inputs](#multi-valued-vs-mono-valued-inputs)
-    - [Example](#example)
+    - [Basic Example](#basic-example)
+    - [How to display a URL](#how-to-display-a-url)
+    - [How to configure lists with multi valued vs mono valued inputs](#how-to-configure-lists-with-multi-valued-vs-mono-valued-inputs)
   - [3.Configure the widget](#3configure-the-widget)
+  - [4.Tips to ease development](#4tips-to-ease-development)
   - [TODO](#todo)
 
 Configuring the widget needs 3 steps:
@@ -109,11 +111,7 @@ Edit ictst/widget/tools.fields-custom-properties.json
 
 >[!NOTE] The configuration of cards view (how content is displayed as cards insted of table is done separately.
 
-### Multi valued vs mono valued inputs
-
-Use the `tag`vs `tags`(plural) to let the widget know if the field accepts multiple values.
-
-### Example
+### Basic Example
 
 ```json
 {
@@ -132,7 +130,34 @@ Use the `tag`vs `tags`(plural) to let the widget know if the field accepts multi
     
 ```
 
+
+### How to display a URL
+
+Use `link` as the subtype.
+
+"subtype": "link"
+
+```json
+{
+  "name": "website",
+  "subtype": "link"
+}
+```
+
+
+### How to configure lists with multi valued vs mono valued inputs
+
+Use the `tag`vs `tags`(plural) to let the widget know if the field accepts multiple values.
+
+
+
 ## 3.Configure the widget
+
+## 4.Tips to ease development
+
+During development phase it is tedious to use a separate configuration file or the widget. Because this configuration is declared as a github url in the html, it would involve constantly committing / pushing a change to test it.
+
+💡 An alternative is to write the json configuration *inline* in the HTML file (see the example in [tools-widget-inline-dev.html](../ictst/widget/tools-widget-inline-dev.html)).
 
 ## TODO
 

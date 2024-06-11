@@ -20,6 +20,11 @@
       "name": "organization",
       "title": "the organization behind the tool",
       "type": "string"
+    },
+    {
+      "name": "website",
+      "title": "website",
+      "type": "string"
     }
   ]
 }
