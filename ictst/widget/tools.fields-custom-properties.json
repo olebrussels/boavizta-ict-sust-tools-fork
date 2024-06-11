@@ -12,6 +12,108 @@
     {
       "name": "website",
       "subtype": "link"
+    },
+    {
+      "name": "sub_module",
+      "subtype": "tags",
+      "tagSeparator": ","
+    },
+    {
+      "name": "environmental_indicator",
+      "subtype": "tags",
+      "tagSeparator": ","
+    },
+    {
+      "name": "quick_description",
+      "subtype": "longtext"
+    },
+    {
+      "name": "assessment_type",
+      "subtype": "tags"
+    },
+    {
+      "name": "main_perimeter",
+      "subtype": "tag"
+    },
+    {
+      "name": "other_perimeters",
+      "subtype": "tags"
+    },
+    {
+      "name": "assessed_functional_unit",
+      "subtype": "tags"
+    },
+    {
+      "name": "data_entry_point",
+      "subtype": "tags"
+    },
+    {
+      "name": "life_cycle_steps",
+      "subtype": "tags"
+    },
+    {
+      "name": "focus",
+      "subtype": "tags"
+    },
+    {
+      "name": "license",
+      "subtype": "tag"
+    },
+    {
+      "name": "self_hostable",
+      "subtype": "tag"
+    },
+    {
+      "name": "originating country"
+    },
+    {
+      "name": "logo"
+    },
+    {
+      "name": "inside_models",
+      "subtype": "tags"
+    },
+    {
+      "name": "methodology_transparency",
+      "subtype": "tag"
+    },
+    {
+      "name": "ref_sources",
+      "subtype": "link" 
+    },
+    {
+      "name": "status",
+      "subtype": "tags" 
+    },
+    {
+      "name": "creator"
+    },
+    {
+      "name": "creation_date"
+    },
+    {
+      "name": "creator_comment"
+    },
+    {
+      "name": "reviewer_1"
+    },
+    {
+      "name": "review_1_date"
+    },
+    {
+      "name": "review_1_explanation"
+    },
+    {
+      "name": "reviewer_2"
+    },
+    {
+      "name": "review_2_date"
+    },
+    {
+      "name": "review_2_explanation"
+    },
+    {
+      "name": "Linked Publications"
     }
   ]
 }

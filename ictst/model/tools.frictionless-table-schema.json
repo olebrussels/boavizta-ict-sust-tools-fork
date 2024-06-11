@@ -25,6 +25,22 @@
       "name": "website",
       "title": "website",
       "type": "string"
+    },
+    {
+      "name": "sub_module",
+      "title": "sub_module",
+      "type": "string"
+
+    },
+    {
+      "name": "environmental_indicator",
+      "title": "Environmental indicator",
+      "type": "string"
+    },
+    {
+      "name": "quick_description",
+      "title": "Quick description",
+      "type": "longtext"
     }
   ]
 }
