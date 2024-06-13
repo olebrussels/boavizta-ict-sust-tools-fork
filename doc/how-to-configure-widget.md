@@ -8,15 +8,18 @@
     - [Basic Example](#basic-example)
     - [How to display a URL](#how-to-display-a-url)
     - [How to configure lists with multi valued vs mono valued inputs](#how-to-configure-lists-with-multi-valued-vs-mono-valued-inputs)
-  - [3.Configure the widget](#3configure-the-widget)
-  - [4.Tips to ease development](#4tips-to-ease-development)
+  - [3.Configure the cards view](#3configure-the-cards-view)
+    - [Configure the cards](#configure-the-cards)
+  - [4.Configure the widget](#4configure-the-widget)
+  - [5.Tips to ease development](#5tips-to-ease-development)
   - [TODO](#todo)
 
-Configuring the widget needs 3 steps:
+Configuring the widget needs 4 steps:
 
 1. configure the table model
-2. configure the display/edition of fields
-3. configure the widget (html)
+2. configure the display/edition of fields in the table view
+3. configure the cards view
+4. configure the widget (html)
 
 ## 1.Configure the table model
 
@@ -149,11 +152,62 @@ Use `link` as the subtype.
 
 Use the `tag`vs `tags`(plural) to let the widget know if the field accepts multiple values.
 
+## 3.Configure the cards view
 
+In addition to being displayed as a data table, Datami offers a _card_ view of each row.
 
-## 3.Configure the widget
+A card view is displayed as:
 
-## 4.Tips to ease development
+- a _mini card_ (just a summary of the fields) that will will shown on a grid
+- a _detail_ card (contains more fields and allows to edit the card content)
+
+### Configure the cards
+
+1. Activate the functionality: add a `cardsettings` entry to the widget configuration
+2. Specify which field to display in the _mini_ and _detail_ view.
+
+Example card view settings.
+
+```json
+"cardsview": {
+    "activate": true,
+    "default": false
+  },
+  "cardssettings": {
+    "mini": {
+      "tool_name": {
+        "position": "title"
+      },
+      "organization": {
+        "position": "resume"
+      },
+      "website": {
+        "position": "links"
+      }
+    },
+    "detail": {
+      "tool_name": {
+        "position": "title"
+      },
+      "organization": {
+        "position": "resume"
+      },
+      "quick_description": {
+        "position": "resume"
+      },
+      "website": {
+        "position": "links"
+      },
+      "environmental_indicator": {
+        "position": "tags"
+      }
+    }
+  }
+```
+
+## 4.Configure the widget
+
+## 5.Tips to ease development
 
 During development phase it is tedious to use a separate configuration file or the widget. Because this configuration is declared as a github url in the html, it would involve constantly committing / pushing a change to test it.
 
