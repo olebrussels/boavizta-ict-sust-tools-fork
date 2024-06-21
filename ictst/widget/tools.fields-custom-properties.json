@@ -1,7 +1,7 @@
 {
   "fields": [
     {
-      "name": "name",
+      "name": "tool_name",
       "sticky": true,
       "primaryKey": true,
       "maxLength": 50
@@ -14,14 +14,12 @@
       "subtype": "link"
     },
     {
-      "name": "sub_module",
-      "subtype": "tags",
-      "tagSeparator": ","
+      "name": "sub_module"
     },
     {
       "name": "environmental_indicator",
       "subtype": "tags",
-      "tagSeparator": ","
+      "tagSeparator": "+"
     },
     {
       "name": "quick_description",
@@ -29,31 +27,41 @@
     },
     {
       "name": "assessment_type",
-      "subtype": "tags"
+      "subtype": "tags",
+      "tagSeparator": "+"
     },
     {
       "name": "main_perimeter",
       "subtype": "tag"
     },
     {
-      "name": "other_perimeters",
-      "subtype": "tags"
+      "name": "other_perimeter",
+      "subtype": "tags",
+      "tagSeparator": "+"
     },
     {
       "name": "assessed_functional_unit",
-      "subtype": "tags"
+      "subtype": "tags",
+      "tagSeparator": "+"
     },
     {
       "name": "data_entry_point",
-      "subtype": "tags"
+      "subtype": "tags",
+      "tagSeparator": "+"
     },
     {
       "name": "life_cycle_steps",
-      "subtype": "tags"
+      "subtype": "tags",
+      "tagSeparator": "+"
     },
     {
+      "name": "ghg_scope",
+      "subtype": "tag"
+    },	
+    {
       "name": "focus",
-      "subtype": "tags"
+      "subtype": "tags",
+      "tagSeparator": "+"
     },
     {
       "name": "license",
@@ -64,57 +72,27 @@
       "subtype": "tag"
     },
     {
-      "name": "originating country"
+      "name": "originating_country"
     },
     {
       "name": "logo"
     },
     {
-      "name": "inside_models",
-      "subtype": "tags"
+      "name": "inside_model",
+      "subtype": "tags",
+      "tagSeparator": "+"
     },
     {
       "name": "methodology_transparency",
       "subtype": "tag"
     },
     {
-      "name": "ref_sources",
-      "subtype": "link" 
-    },
-    {
       "name": "status",
-      "subtype": "tags" 
+      "subtype": "tag" 
     },
     {
-      "name": "creator"
-    },
-    {
-      "name": "creation_date"
-    },
-    {
-      "name": "creator_comment"
-    },
-    {
-      "name": "reviewer_1"
-    },
-    {
-      "name": "review_1_date"
-    },
-    {
-      "name": "review_1_explanation"
-    },
-    {
-      "name": "reviewer_2"
-    },
-    {
-      "name": "review_2_date"
-    },
-    {
-      "name": "review_2_explanation"
-    },
-    {
-      "name": "Linked Publications"
+      "name": "ref_sources",
+      "subtype": "string" 
     }
   ]
 }
-    
