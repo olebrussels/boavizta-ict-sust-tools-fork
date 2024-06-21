@@ -35,7 +35,7 @@
       "subtype": "tag"
     },
     {
-      "name": "other_perimeter",
+      "name": "other_perimeters",
       "subtype": "tags",
       "tagSeparator": "+"
     },
@@ -45,7 +45,7 @@
       "tagSeparator": "+"
     },
     {
-      "name": "data_entry_point",
+      "name": "data_entry_points",
       "subtype": "tags",
       "tagSeparator": "+"
     },

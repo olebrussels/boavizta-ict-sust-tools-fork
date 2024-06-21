@@ -149,7 +149,7 @@
 			"description": "What is the general scope covered by the tool. Only one must be chosen as the primary one for visual classification purpose."
 		},
 		{
-			"name": "other_perimeter",
+			"name": "other_perimeters",
 			"title": "Other Perimeters",
 			"type": "string",
 			"constraints": [
@@ -209,7 +209,7 @@
 			"description": "Which granularity of a digital service or an information system can be assessed with the tool (it does not include the data used as entry point which are covered in the field [data_entry_point])."
 		},
 		{
-			"name": "data_entry_point",
+			"name": "data_entry_points",
 			"title": "Data Entry Points",
 			"type": "string",
 			"constraints": [
