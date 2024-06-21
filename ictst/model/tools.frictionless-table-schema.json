@@ -1,46 +1,443 @@
 {
-  "fields": [
-    {
-      "name": "tool_name",
-      "title": "the name of the tool",
-      "type": "string",
-      "constraints": [
-        {
-          "required": true
-        },
-        {
-          "minLength": 3
-        }
-      ],
-      "description": "A long description about the field that is named tool_name",
-      "example": "Boavizta API",
-      "format": "A string specifying a format, but not used by the widget"
-    },
-    {
-      "name": "organization",
-      "title": "the organization behind the tool",
-      "type": "string"
-    },
-    {
-      "name": "website",
-      "title": "website",
-      "type": "string"
-    },
-    {
-      "name": "sub_module",
-      "title": "sub_module",
-      "type": "string"
-
-    },
-    {
-      "name": "environmental_indicator",
-      "title": "Environmental indicator",
-      "type": "string"
-    },
-    {
-      "name": "quick_description",
-      "title": "Quick description",
-      "type": "longtext"
-    }
-  ]
+	"fields": [
+		{
+			"name": "tool_name",
+			"title": "the name of the tool",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"minLength": 3
+				}
+			],
+			"description": "The tool must have a well identified name and not being just an item in the menu of a bigger tool (e.g. not the sustainability check option in a development tool)",
+			"example": "Boavizta API",
+			"format": "A string specifying a format, but not used by the widget"
+		},
+		{
+			"name": "organization",
+			"title": "The legal entity having the intellectual property of the tool",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"minLength": 3
+				}
+			],
+			"description": "The legal entity having the intellectual property of the tool. In case of shared intellectual property between organizations, all of them can be listed (comma separated).",
+			"example": "Boavizta",
+			"format": "A string specifying a format, but not used by the widget"
+		},
+		{
+			"name": "website",
+			"title": "website",
+			"type": "string",
+			"constraints": {
+				"required": true
+			},
+			"description": "The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionnalities, its licencing, etc. Required format is a URL.",
+			"example": "https://github.com/Boavizta/cloud-scanner",
+			"format": "^(http|https)://[a-zA-Z0-9. -]+\\. [a-zA-Z]{2,}$"
+		},
+		{
+			"name": "sub_module",
+			"title": "sub module of a tool",
+			"type": "string",
+			"constraints": [
+				{
+					"required": false
+				},
+				{
+					"minLength": 3
+				}
+			],
+			"description": "If a tool has multiple modules based on different models and/or data entry point, several lines can be inserted for the same tool. Both the fields 'Tool name' and 'Organization' must have exact same values between the different sub-modules. This field is rarely used and is reserved for complex and comprehensive tools assessing an entire information system.",
+			"example": "Device Fleet"
+		},
+		{
+			"name": "environmental_indicator",
+			"title": "Environmental indicators",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Final Energy Consumption",
+						"Primary Energy Consumption",
+						"Global Warming Potential",
+						"Abiotic ressource Depletion Potential for fossil fuel - ADPf",
+						"Abiotic ressource Depletion Potential for element - ADPe",
+						"Water Depletion",
+						"Product Environmental Footprint Score",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "Which environmental indicators are provided by the tool such as Final Energy consumption, Primary Energy consumption, Global Warming Potential, Abiotic ressource Depletion Potential, Water Depletion, Product Environmental Footprint Score. The Not Applicable value is usually used for the tools having a “Best Practices” type of assessment.",
+			"example": "GWP"
+		},
+		{
+			"name": "quick_description",
+			"title": "Quick description",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"minLength": 15
+				}
+			],
+			"description": "Ideally it should be the description provided by the owner of the tool.",
+			"example": "Cloud scanner combines real time inventory and usage data from your AWS account with Boavizta API to offer a view of your impacts on a given region. It is multi criteria: Primary Energy consumption (PE), Abiotic resource depletion potential (ADP), and Global Warming Potential (GWP) and multi stage: separate impacts of resources Usage and Manufacture. This is similar to what you can get from Datavizta but with automated inventory. Estimations can be filtered by tags. It eases attribution to a specific server, environment, application or service."
+		},
+		{
+			"name": "assessment_type",
+			"title": "Assessment type",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Best practices",
+						"Evaluation",
+						"Measure"
+					]
+				}
+			],
+			"description": "What is the main purpose of the tool. Best practices: assessing some functional units against industry best practices without any intention to measure or evaluate footprint. Evaluation: assessing some functional units using a model to estimate an environmental indicator. Measure: collecting the value of an environmental indicator for some functional units.",
+			"format": "A string specifying a format, but not used by the widget"
+		},
+		{
+			"name": "main_perimeter",
+			"title": "Main Perimeter",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Global | Information System",
+						"Global | Digital Advertising",
+						"Global | Digital Workplace",
+						"Infra | Datacenter",
+						"Infra | Cloud",
+						"Infra | Network",
+						"Equipment | End-user Devices", 
+						"Equipment | IoT", 
+						"Equipment | Industrial equipment", 
+						"Software | Development Tools", 
+						"Software | CI-CD",
+						"Software | Backend", 
+						"Software | API", 
+						"Software | Mobile Apps", 
+						"Software | Web Apps", 
+						"Software | Web Content",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "What is the general scope covered by the tool. Only one must be chosen as the primary one for visual classification purpose."
+		},
+		{
+			"name": "other_perimeter",
+			"title": "Other Perimeters",
+			"type": "string",
+			"constraints": [
+				{
+					"required": false
+				},
+				{
+					"enum": [
+						"Global | Information System",
+						"Global | Digital Advertising",
+						"Global | Digital Workplace",
+						"Infra | Datacenter",
+						"Infra | Cloud",
+						"Infra | Network",
+						"Equipment | End-user Devices", 
+						"Equipment | IoT", 
+						"Equipment | Industrial equipment", 
+						"Software | Development Tools", 
+						"Software | CI-CD",
+						"Software | Backend", 
+						"Software | API", 
+						"Software | Mobile Apps", 
+						"Software | Web Apps", 
+						"Software | Web Content",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "What is the general scopes covered by the tool. Several value can be chosen to best described the tool coverage."
+		},
+		{
+			"name": "assessed_functional_unit",
+			"title": "Assessed Functional Unit",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Process (System)",
+						"Application",
+						"Team",
+						"Project",
+						"User",
+						"Request (http)",
+						"Feature",
+						"User Story",
+						"Machine",
+						"Room",
+						"Website",
+						"Network Traffic",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "Which granularity of a digital service or an information system can be assessed with the tool (it does not include the data used as entry point which are covered in the field [data_entry_point])."
+		},
+		{
+			"name": "data_entry_point",
+			"title": "Data Entry Points",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Server plan",
+						"CPU based (RAPL)",
+						"CPU, RAM, I/O (raw)",
+						"Bandwidth",
+						"DOM Size",
+						"Request Number",
+						"User Journey Modelisation",
+						"User localization",
+						"Datacenter Localization",
+						"Connexion type",
+						"PUE",
+						"WUE",
+						"Mutualization rate",
+						"Devices Inventory (both internal and external users of an application)",
+						"CPU capacity",
+						"RAM capacity",
+						"I/O Capacity",
+						"Traffic/Usage",
+						"Storage",
+						"Undisclosed",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "List all the data used to produce the environmental indicators."
+		},
+		{
+			"name": "life_cycle_steps",
+			"title": "Life Cycle Steps",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Extraction",
+						"Manufacturing",
+						"Transport",
+						"Usage",
+						"End of life",
+						"Undisclosed",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "Qualify which steps of a Life Cycle Assessment are tracked. Minimum coverage is usually “usage” when only the energy consumed during the use phase is taken into consideration. This field enables also to qualify the scope(s) being covered for the GWP indicator (GHG emissions in CO2e). Usual steps of an ISO 14040:2006 LCA are eligible."
+		},
+		{
+			"name": "ghg_scope",
+			"title": "GHG Scopes Covered",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Scope 1 and 2 (market-based)",
+						"Scope 1 and 2 (location-based)",
+						"Scope 1, 2 (market-based) and 3",
+						"Scope 1, 2 (location-based) and 3",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "This category makes it easy to link the product view (life cycle steps) with the Corporate Standard (company scopes), for educational purposes. If GWP is checked in the environmental indicator field, this field indicates which scopes are covered (following GHG protocol Corporate Standard). The scope 2 must be specified between market-based and location-based approach. It should be aligned with the Life Cycle Steps (no scope 3 can be indicated if Manufacturing is not included in the Life Cycle Steps)."
+		},
+		{
+			"name": "focus",
+			"title": "Focus",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Reporting",
+						"Calculation",
+						"Awareness",
+						"Eco-design",
+						"Collection (of data)"
+					]
+				}
+			],
+			"description": "The information can be provided by the organization itself or assessed by Boavizta team. This field describe the main goals of the tool, several values are allowed. This field is for classification purpose."
+		},
+		{
+			"name": "licence",
+			"title": "Licence",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Open-Source under Apache 2.0 licence",
+						"Open-Source under AGPLv3 licence",
+						"Open-Source under GPLv2 licence",
+						"Open-Source under GPLv3 licence",
+						"Open-Source under BSD-3 licence",
+						"Open-Source under MIT license",
+						"Creative Commons (CC-BY-NC-ND)",
+						"Creative Commons (CC-BY)",
+						"Open-Source under an unkown licence",
+						"Business Source - non permissive licence",
+						"Closed Source / Commercial"
+					]
+				}
+			],
+			"description": "Describe the legal environment of the intellectual property of the tool. Business Source - non permissive licence is to be used when the code is accessible but its licence restricts its permitted use such as no commercial use or internal use only if self-hosted; elasticsearch is an example. Closed Source / Commercial is to be used when the code isn’t shared at all."
+		},
+		{
+			"name": "self_hostable",
+			"title": "Self Hostable",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Yes",
+						"No",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "Can the tool be self-hosted or is it only a SaaS solution?"
+		},
+		{
+			"name": "originating_country",
+			"title": "Originating Country",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				}
+			],
+			"description": "Where the legal entity owning the intellectual property of the tool is legally based. Value should be of ISO 3166-1 alpha-3 format.",
+			"format": "^[A-Z]{3}",
+			"example": "FRA"
+		},
+		{
+			"name": "logo",
+			"title": "Logo",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				}
+			],
+			"description": "A URI pointing to an image file file. We recommand square image file with maximum size of 300x300px and maximum weight of 100Kb."
+		},
+		{
+			"name": "inside_model",
+			"title": "Inside Models",
+			"type": "string",
+			"constraints": [
+				{
+					"required": false
+				}
+			],
+			"description": "Main models being used for the evaluation, comma separated. This field requires that the Assessment Type field = Evaluation.",
+			"example": "Sustainable Web Design model"
+		},
+		{
+			"name": "methodology_transparency",
+			"title": "Methodology Transparency",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Undisclosed",
+						"Disclosed only to internal stakeholders or clients",
+						"Disclosed to a scientific panel who did not share the results",
+						"Disclosed to a scientific panel who shared the results",
+						"Fully Disclosed",
+						"Not Applicable"
+					]
+				}
+			],
+			"description": "To which audience is disclosed the following information: inside model, main data sources and main scientific sources (single value)."
+		},
+		{
+			"name": "status",
+			"title": "Boavizta Processing Status",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				},
+				{
+					"enum": [
+						"Submitted",
+						"Draft",
+						"Boavizta reviewed",
+						"Published",
+						"Not to be listed"
+					]
+				}
+			],
+			"description": "Described where the recording stands in the listing process at Boavizta.",
+			"example": "Draft"
+		},
+		{
+			"name": "ref_sources",
+			"title": "Reference Sources",
+			"type": "string",
+			"constraints": [
+				{
+					"required": true
+				}
+			],
+			"description": "Must be URL with a path separated by comma. A list of the references supporting the claims about the tool made in this table (blog articles, scientific paper, white paper, presentation, webinar, etc.)."
+		}
+	]
 }
