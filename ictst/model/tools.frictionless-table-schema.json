@@ -39,7 +39,7 @@
 			"constraints": {
 				"required": true
 			},
-			"description": "The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionnalities, its licencing, etc. Required format is a URL.",
+			"description": "The tool must have a dedicated web page (landing page, github repo, etc.) describing its functionalities, its licensing etc. Required format is a URL.",
 			"example": "https://github.com/Boavizta/cloud-scanner",
 			"format": "^(http|https)://[a-zA-Z0-9. -]+\\. [a-zA-Z]{2,}$"
 		},
@@ -324,7 +324,7 @@
 						"Open-Source under MIT license",
 						"Creative Commons (CC-BY-NC-ND)",
 						"Creative Commons (CC-BY)",
-						"Open-Source under an unkown licence",
+						"Open-Source under an unknown licence",
 						"Business Source - non permissive licence",
 						"Closed Source / Commercial"
 					]
@@ -372,10 +372,10 @@
 					"required": true
 				}
 			],
-			"description": "A URI pointing to an image file file. We recommand square image file with maximum size of 300x300px and maximum weight of 100Kb."
+			"description": "A URI pointing to an image file file. We recommend square image file with maximum size of 300x300px and maximum weight of 100Kb."
 		},
 		{
-			"name": "inside_model",
+			"name": "inside_models",
 			"title": "Inside Models",
 			"type": "string",
 			"constraints": [
@@ -383,7 +383,7 @@
 					"required": false
 				}
 			],
-			"description": "Main models being used for the evaluation, comma separated. This field requires that the Assessment Type field = Evaluation.",
+			"description": "Main models being used for the evaluation, separated by + character. This field requires that the Assessment Type field = Evaluation.",
 			"example": "Sustainable Web Design model"
 		},
 		{
