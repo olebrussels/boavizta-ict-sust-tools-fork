@@ -85,7 +85,7 @@
 		{
 			"name": "quick_description",
 			"title": "Quick description",
-			"type": "longtext",
+			"type": "string",
 			"constraints": [
 				{
 					"required": true
@@ -375,9 +375,9 @@
 			"description": "A URI pointing to an image file file. We recommand square image file with maximum size of 300x300px and maximum weight of 100Kb."
 		},
 		{
-			"name": "inside_models",
+			"name": "inside_model",
 			"title": "Inside Models",
-			"type": "longtext",
+			"type": "string",
 			"constraints": [
 				{
 					"required": false
@@ -431,7 +431,7 @@
 		{
 			"name": "ref_sources",
 			"title": "Reference Sources",
-			"type": "longtext",
+			"type": "string",
 			"constraints": [
 				{
 					"required": true
