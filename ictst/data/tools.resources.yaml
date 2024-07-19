@@ -19,21 +19,21 @@ schema:
       constraints:
         enum:
         - Global | Information System
-        - Global | Digital Advertising        
-        - Infra | Datacenter   
-        - Infra | Cloud 
-        - Infra | Network    
+        - Global | Digital Advertising
+        - Infra | Datacenter
+        - Infra | Cloud
+        - Infra | Network
         - Equipment | End-user Devices
-        - Equipment | IoT        
-        - Equipment | Industrial equipment            
-        - Software | Development tools 
-        - Software | CI/CD 
-        - Software | Backend 
-        - Software | API 
-        - Software | Mobile Apps 
-        - Software | Web Apps 
-        - Software | Web Content 
-        - Global | Digital Workspace               
-        - To Be Qualified        
+        - Equipment | IoT
+        - Equipment | Industrial equipment
+        - Software | Development tools
+        - Software | CI/CD
+        - Software | Backend
+        - Software | API
+        - Software | Mobile Apps
+        - Software | Web Apps
+        - Software | Web Content
+        - Global | Digital Workspace
+        - To Be Qualified
 
    # TODO: Add other fields
