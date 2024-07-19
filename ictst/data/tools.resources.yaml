@@ -13,4 +13,27 @@ schema:
     # The name of the organization that produces the tools
     - name: organization
       type: string
+    #What is the general scope covered by the tool. Several values are possible but one should be chosen as the primary one for visual classification purpose.
+    - name: main_perimeter
+      type: string
+      constraints:
+        enum:
+        - Global | Information System
+        - Global | Digital Advertising        
+        - Infra | Datacenter   
+        - Infra | Cloud 
+        - Infra | Network    
+        - Equipment | End-user Devices
+        - Equipment | IoT        
+        - Equipment | Industrial equipment            
+        - Software | Development tools 
+        - Software | CI/CD 
+        - Software | Backend 
+        - Software | API 
+        - Software | Mobile Apps 
+        - Software | Web Apps 
+        - Software | Web Content 
+        - Global | Digital Workspace               
+        - To Be Qualified        
+
    # TODO: Add other fields
