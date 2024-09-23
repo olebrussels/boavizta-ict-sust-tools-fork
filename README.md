@@ -87,3 +87,48 @@ See [draft dataset](old-examples/ict-sustainability-tools.csv)
 - A CSV file displayed without any customization [old-examples/csv/csv-widget-basic.html](old-examples/csv/csv-widget-basic.html)
 - A CSV file displayed with some additional constraints on fields [old-examples/csv/csv-widget-with-constraints.html](old-examples/csv/csv-widget-with-constraints.html).
 - Other examples with more complex validation rules:[GitHub - demeringo/datami-tests: Testing datami widget to edit and validate csv files](https://github.com/demeringo/datami-tests/)
+
+---
+
+## Mini server for local development
+
+A mini server is writen in the `server.py` to serve this folder's files.
+
+To install the mini-server :
+
+```sh
+pip install --upgrade pip
+python3 -m pip install --user virtualenv
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+or
+
+```sh
+sh setup.sh
+source venv/bin/activate
+```
+
+---
+
+### Run local server
+
+To run the server on `http://localhost:8800`:
+
+```sh
+python server.py
+```
+
+or
+
+```sh
+sh run_server.sh
+```
+
+Files will be locally served on :
+
+- `http://localhost:8800/content/<path:folder_path>/<string:filename>`
+- `http://localhost:8800/statics/<path:folder_path>/<string:filename>`
