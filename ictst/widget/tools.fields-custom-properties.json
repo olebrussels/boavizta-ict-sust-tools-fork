@@ -19,6 +19,7 @@
     {
       "name": "environmental_indicator",
       "subtype": "tags",
+      "bgColor": "#00adb8",
       "tagSeparator": "+"
     },
     {
@@ -28,66 +29,80 @@
     {
       "name": "assessment_type",
       "subtype": "tags",
+      "bgColor": "#f59c00",
       "tagSeparator": "+"
     },
     {
       "name": "main_perimeter",
+      "bgColor": "grey",
       "subtype": "tag"
     },
     {
       "name": "other_perimeters",
       "subtype": "tags",
+      "bgColor": "grey",
       "tagSeparator": "+"
     },
     {
       "name": "assessed_functional_unit",
       "subtype": "tags",
+      "bgColor": "grey",
       "tagSeparator": "+"
     },
     {
       "name": "data_entry_points",
       "subtype": "tags",
+      "bgColor": "grey",
       "tagSeparator": "+"
     },
     {
       "name": "life_cycle_steps",
       "subtype": "tags",
+      "bgColor": "grey",
       "tagSeparator": "+"
     },
     {
       "name": "ghg_scope",
+      "bgColor": "grey",
       "subtype": "tag"
     },	
     {
       "name": "focus",
       "subtype": "tags",
+      "bgColor": "#792b0a",
       "tagSeparator": "+"
     },
     {
-      "name": "license",
+      "name": "licence",
+      "bgColor": "#9242bc",
       "subtype": "tag"
     },
     {
       "name": "self_hostable",
+      "bgColor": "#12e7d7",
       "subtype": "tag"
     },
     {
       "name": "originating_country"
     },
     {
-      "name": "logo"
+      "name": "logo",
+      "subtype": "image"
     },
     {
       "name": "inside_models",
       "subtype": "tags",
+      "bgColor": "grey",
       "tagSeparator": "+"
     },
     {
       "name": "methodology_transparency",
+      "bgColor": "grey",
       "subtype": "tag"
     },
     {
       "name": "status",
+      "bgColor": "grey",
       "subtype": "tag" 
     },
     {
