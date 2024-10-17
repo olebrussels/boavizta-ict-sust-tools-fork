@@ -1,6 +1,6 @@
 # 🗺️ Mapping of the ICT Sustainability Tools Landscape
 
-This repository aim at providing to the global IT Sustainability community a vendor-neutral, fact-based, non-judgmental and exhaustive repository of the tools and services available to assess the environmental footprint of IT components.
+This repository aims at providing to the global IT Sustainability community a vendor-neutral, fact-based, non-judgmental and exhaustive repository of the tools and services available to assess the environmental footprint of IT components.
 
 It defines a data model that can be used to build an inventory of the tools.
 
@@ -11,6 +11,7 @@ It defines a data model that can be used to build an inventory of the tools.
 > The data model is still very drafty and is expected to evolve.
 
 - [🗺️ Mapping of the ICT Sustainability Tools Landscape](#️-mapping-of-the-ict-sustainability-tools-landscape)
+  - [Access the data](#access-the-data)
   - [Repository content](#repository-content)
   - [How to configure the widget](#how-to-configure-the-widget)
   - [Implementation](#implementation)
@@ -21,9 +22,16 @@ It defines a data model that can be used to build an inventory of the tools.
     - [Data format](#data-format)
     - [draft dataset](#draft-dataset)
     - [Example Datami widgets](#example-datami-widgets)
+  - [Mini server for local development](#mini-server-for-local-development)
+    - [Run local server](#run-local-server)
+
+## Access the data
+
+Visualize or edit the data set at [https://boavizta.github.io/ict-sustainability-tools/](https://boavizta.github.io/ict-sustainability-tools/)
 
 ## Repository content
 
+- index.html : source of the main page (published at [https://boavizta.github.io/ict-sustainability-tools/](https://boavizta.github.io/ict-sustainability-tools/))
 - doc/ : documentation
   - architecture decision records: [doc/adr/](doc/adr/)
 - ictst
@@ -33,9 +41,9 @@ It defines a data model that can be used to build an inventory of the tools.
   - ictst/model
     - data model used to configure the widget: [ictst/model/tools.frictionless-table-schema.json](ictst/model/tools.frictionless-table-schema.json)
   - ictst/widget:
-    - widget html: [ictst/widget/tools-widget.html](ictst/widget/tools-widget.html)
+    - sample html page (widget): [ictst/widget/tools-widget.html](ictst/widget/tools-widget.html)
     - additional fields configuration for the widget [ictst/widget/tools.fields-custom-properties.json](ictst/widget/tools.fields-custom-properties.json)
-- .github/workflows : github action to automate the data validation
+- .github/workflows : github action to automate the data validation and publication of the page
 - old-examples/: other examples of using Datami
 
 ## How to configure the widget
@@ -92,7 +100,7 @@ See [draft dataset](old-examples/ict-sustainability-tools.csv)
 
 ## Mini server for local development
 
-A mini server is writen in the `server.py` to serve this folder's files.
+A mini server is written in the `server.py` to serve this folder's files.
 
 To install the mini-server :
 
