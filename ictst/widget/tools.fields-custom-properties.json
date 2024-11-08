@@ -87,7 +87,7 @@
     },
     {
       "name": "logo",
-      "subtype": "image"
+      "subtype": "link"
     },
     {
       "name": "inside_models",
