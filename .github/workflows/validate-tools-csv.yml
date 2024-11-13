@@ -1,12 +1,12 @@
 name: frictionless
 
 on:
-  push:
-    branches:
-      - 47-no-access-to-frictionless-runs-reports
-  # pull_request:
+  # push:
   #   branches:
-  #     - main
+  #     - 47-no-access-to-frictionless-runs-reports
+  pull_request:
+    branches:
+      - main
 
 jobs:
 
