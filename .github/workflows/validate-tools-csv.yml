@@ -11,7 +11,7 @@ on:
 jobs:
 
   # Validate the format of the csv data
-  validate-sample-project:
+  validate-tools-csv:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
