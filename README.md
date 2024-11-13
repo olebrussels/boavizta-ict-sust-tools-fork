@@ -21,7 +21,8 @@ It defines a data model that can be used to build an inventory of the tools.
       - [Components](#components)
     - [Data format](#data-format)
     - [draft dataset](#draft-dataset)
-    - [Example Datami widgets](#example-datami-widgets)
+    - [data validation in CI](#data-validation-in-ci)
+    - [Other examples of Datami widgets configration](#other-examples-of-datami-widgets-configration)
   - [Local development](#local-development)
     - [1. Install the mini server for local development](#1-install-the-mini-server-for-local-development)
       - [Run local server](#run-local-server)
@@ -92,7 +93,27 @@ We use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to display d
 
 See [draft dataset](old-examples/ict-sustainability-tools.csv)
 
-### Example Datami widgets
+### data validation in CI
+
+Data _format_ (not content) is automatically validated in CI using frictionless-ci in a github action triggered on PR's.
+
+See [frictionless-ci | Frictionless Repository](https://repository.frictionlessdata.io/index.html)
+
+```sh
+# Local data validation
+# See https://framework.frictionlessdata.io/docs/guides/validating-data.html
+
+# Install frictionless cli
+pip install frictionless
+# 
+cd ictst/data
+# validate just csv _global_ structure
+frictionless validate tools.csv
+# validate that format of fields matches description
+frictionless validate tools.resources.yaml
+```
+
+### Other examples of Datami widgets configration
 
 - A CSV file displayed without any customization [old-examples/csv/csv-widget-basic.html](old-examples/csv/csv-widget-basic.html)
 - A CSV file displayed with some additional constraints on fields [old-examples/csv/csv-widget-with-constraints.html](old-examples/csv/csv-widget-with-constraints.html).

@@ -1,17 +1,17 @@
 name: frictionless
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - 47-no-access-to-frictionless-runs-reports
   pull_request:
     branches:
       - main
 
 jobs:
 
-  # Validate the example project-list
-  validate:
+  # Validate the format of the csv data
+  validate-tools-csv:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -19,4 +19,4 @@ jobs:
       - name: Validate data
         uses: frictionlessdata/repository@v2
         with:
-          resources: old-examples/project-list/project-list.resources.yaml
+          resources: ictst/data/tools.resources.yaml

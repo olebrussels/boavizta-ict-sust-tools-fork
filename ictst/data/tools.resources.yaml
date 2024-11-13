@@ -13,6 +13,16 @@ schema:
     # The name of the organization that produces the tools
     - name: organization
       type: string
+    - name: website
+      type: string
+    - name: sub_module
+      type: string
+    - name: environmental_indicator
+      type: string
+    - name: quick_description
+      type: string
+    - name: assessment_type
+      type: string
     #What is the general scope covered by the tool. Several values are possible but one should be chosen as the primary one for visual classification purpose.
     - name: main_perimeter
       type: string
@@ -35,5 +45,27 @@ schema:
         - Software | Web Content
         - Global | Digital Workspace
         - To Be Qualified
-
-   # TODO: Add other fields
+    - name: other_perimeters
+    - name: assessed_functional_unit
+    - name: data_entry_points
+    - name: life_cycle_steps
+    - name: focus
+    - name: licence
+    - name: self_hostable
+    - name: originating_country
+    - name: logo
+    - name: inside_models
+    - name: methodology_transparency
+    - name: ref_sources
+    - name: status
+    - name: Creator
+    - name: Creation date
+    - name: Creator_comment
+    - name: reviewer_1
+    - name: review_1_date
+    - name: review_1_explanation
+    - name: reviewer_2
+    - name: review_2_date
+    - name: review_2_explanation
+    - name: Linked Publications
+# Todo detail constraints on the fields.
