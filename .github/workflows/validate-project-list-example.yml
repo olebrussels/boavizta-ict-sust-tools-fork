@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  # Validate the example project-list
+  # Validate the format of the csv data
   validate-sample-project:
     runs-on: ubuntu-latest
     steps:
@@ -19,4 +19,4 @@ jobs:
       - name: Validate data
         uses: frictionlessdata/repository@v2
         with:
-          resources: old-examples/project-list/data/project-list.resources.yaml
+          resources: ictst/data/tools.resources.yaml
