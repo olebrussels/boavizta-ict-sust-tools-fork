@@ -23,8 +23,10 @@ It defines a data model that can be used to build an inventory of the tools.
     - [draft dataset](#draft-dataset)
     - [data validation in CI](#data-validation-in-ci)
     - [Other examples of Datami widgets configration](#other-examples-of-datami-widgets-configration)
-  - [Mini server for local development](#mini-server-for-local-development)
-    - [Run local server](#run-local-server)
+  - [Local development](#local-development)
+    - [1. Install the mini server for local development](#1-install-the-mini-server-for-local-development)
+      - [Run local server](#run-local-server)
+    - [2. Configure the widget to use the local files](#2-configure-the-widget-to-use-the-local-files)
 
 ## Access the data
 
@@ -119,7 +121,14 @@ frictionless validate tools.resources.yaml
 
 ---
 
-## Mini server for local development
+## Local development
+
+To ease development and configuration of the widget, we can work with a local data set and local configuration files.
+
+1. Run a local server to expose the *data* and *configuration* files locally (see below).
+2. Modify `index.html` to use the local files (configure the `localdev` properties to `true`).
+
+### 1. Install the mini server for local development
 
 A mini server is written in the `server.py` to serve this folder's files.
 
@@ -143,7 +152,7 @@ source venv/bin/activate
 
 ---
 
-### Run local server
+#### Run local server
 
 To run the server on `http://localhost:8800`:
 
@@ -161,3 +170,31 @@ Files will be locally served on :
 
 - `http://localhost:8800/content/<path:folder_path>/<string:filename>`
 - `http://localhost:8800/statics/<path:folder_path>/<string:filename>`
+
+### 2. Configure the widget to use the local files
+
+Modify `index.html` to use the local files (configure the `localdev` properties to `true`)
+
+```json
+{
+        "title": "Tools Landscape",
+        "activate": true,
+        "localdev": true,
+        "gitfilelocal": "http://localhost:8800/statics/ictst/data/tools.csv",
+        "gitfile": "https://github.com/Boavizta/ict-sustainability-tools/blob/main/ictst/data/tools.csv",
+
+[....]
+
+ "schema": {
+            "localdev": true,
+            "filelocal": "http://localhost:8800/statics/ictst/model/tools.frictionless-table-schema.json",
+            "file": "https://github.com/Boavizta/ict-sustainability-tools/blob/main/ictst/model/tools.frictionless-table-schema.json"
+          },
+          "fields-custom-properties": {
+            "localdev": true,
+            "filelocal": "http://localhost:8800/statics/ictst/widget/tools.fields-custom-properties.json",
+            "file": "https://github.com/Boavizta/ict-sustainability-tools/blob/main/ictst/widget/tools.fields-custom-properties.json"
+          },
+```
+
+💡 You can now open the local `index.html` in a web browser and update data or configurations. Reload the page and changes are immediately visible.
