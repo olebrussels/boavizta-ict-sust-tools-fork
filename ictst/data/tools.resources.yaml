@@ -49,6 +49,7 @@ schema:
     - name: assessed_functional_unit
     - name: data_entry_points
     - name: life_cycle_steps
+    - name: ghg_scope
     - name: focus
     - name: licence
     - name: self_hostable
