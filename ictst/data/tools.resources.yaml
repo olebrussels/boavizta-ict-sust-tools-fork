@@ -28,22 +28,22 @@ schema:
       type: string
       constraints:
         enum:
-        - Global | Information System
-        - Global | Digital Advertising
-        - Infra | Datacenter
-        - Infra | Cloud
-        - Infra | Network
-        - Equipment | End-user Devices
-        - Equipment | IoT
-        - Equipment | Industrial equipment
-        - Software | Development tools
-        - Software | CI/CD
-        - Software | Backend
-        - Software | API
-        - Software | Mobile Apps
-        - Software | Web Apps
-        - Software | Web Content
-        - Global | Digital Workspace
+        - Global - Information System
+        - Global - Digital Advertising
+        - Infra - Datacenter
+        - Infra - Cloud
+        - Infra - Network
+        - Equipment - End-user Devices
+        - Equipment - IoT
+        - Equipment - Industrial equipment
+        - Software - Development tools
+        - Software - CI/CD
+        - Software - Backend
+        - Software - API
+        - Software - Mobile Apps
+        - Software - Web Apps
+        - Software - Web Content
+        - Global - Digital Workspace
         - To Be Qualified
     - name: other_perimeters
     - name: assessed_functional_unit
@@ -52,11 +52,21 @@ schema:
     - name: ghg_scope
     - name: focus
     - name: licence
+      type: string
     - name: self_hostable
     - name: originating_country
     - name: logo
     - name: inside_models
     - name: methodology_transparency
+      type: string
+      constraints:
+        enum:
+        - Undisclosed
+        - Disclosed only to internal stakeholders or clients
+        - Disclosed to a scientific panel who did not share the results
+        - Disclosed to a scientific panel who shared the results
+        - Fully Disclosed
+        - Not Applicable
     - name: ref_sources
     - name: status
     - name: Creator
