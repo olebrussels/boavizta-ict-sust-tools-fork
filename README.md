@@ -16,6 +16,7 @@ It defines a data model that can be used to build an inventory of the tools.
   - [Data model](#data-model)
   - [Documentation](#documentation)
   - [Acknowledgments](#acknowledgments)
+  - [Licenses](#licenses)
 
 ## Getting started 🚀: visualize the data
 
@@ -36,3 +37,8 @@ See [/doc/technical-documentaion.md](/doc/technical-documentation.md)
 ## Acknowledgments
 
 We use a widget provided by [Datami](https://datami-docs.multi.coop/?locale=en) to display data and allow edition of a CSV file stored in Github. Thank you for your support.
+
+## Licenses
+
+- The content of this repository is licensed under [AGPLV3](/LICENSE)
+- Datami components are licensed under AGPLV3: <https://gitlab.com/multi-coop/datami-project/datami/-/blob/main/LICENSE>
