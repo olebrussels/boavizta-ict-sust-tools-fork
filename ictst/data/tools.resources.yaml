@@ -23,13 +23,14 @@ schema:
       type: string
     - name: assessment_type
       type: string
-    #What is the general scope covered by the tool. Several values are possible but one should be chosen as the primary one for visual classification purpose.
+    # What is the general scope covered by the tool. Several values are possible but one should be chosen as the primary one for visual classification purpose.
     - name: main_perimeter
       type: string
       constraints:
         enum:
         - Global - Information System
         - Global - Digital Advertising
+        - Global - Digital Workspace
         - Infra - Datacenter
         - Infra - Cloud
         - Infra - Network
@@ -43,7 +44,6 @@ schema:
         - Software - Mobile Apps
         - Software - Web Apps
         - Software - Web Content
-        - Global - Digital Workspace
         - To Be Qualified
     - name: other_perimeters
     - name: assessed_functional_unit
