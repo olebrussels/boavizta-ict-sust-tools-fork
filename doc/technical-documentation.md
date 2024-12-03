@@ -44,7 +44,7 @@ We use a [Datami](https://datami-docs.multi.coop/?locale=en) widget to display d
 
 ### Architecture decisions records / ADRs
 
-- [All ADRs](adr/flowChart.md)
+- [All ADRs](adr)
 
 ### Usage flow
 

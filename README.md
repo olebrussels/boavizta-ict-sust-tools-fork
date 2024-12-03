@@ -1,14 +1,10 @@
 # 🗺️ Mapping of the ICT Sustainability Tools Landscape
 
-This repository aims at providing to the global IT Sustainability community a vendor-neutral, fact-based, non-judgmental and exhaustive repository of the tools and services available to assess the environmental footprint of IT components.
-
-It defines a data model that can be used to build an inventory of the tools.
+This repository aims at providing a **vendor-neutral**, **fact-based**, **non-judgmental** and exhaustive inventory of the tools and services available to assess the environmental footprint of IT components.
 
 > [!CAUTION]
-> Today, any data contained in this repository is not validated nor reviewed. It is likely that the data contains false assumptions. It is here as sample data for the sole purpose of development and testing of the model. It should NOT be used for any other purpose.
+> Today, data contained in this repository is not validated nor reviewed. It is likely that the data contains false assumptions. It is here as sample data for the sole purpose of development and testing of the model. It should NOT be used for any other purpose.
 
-> [!WARNING]
-> The data model is still very drafty and is expected to evolve.
 
 - [🗺️ Mapping of the ICT Sustainability Tools Landscape](#️-mapping-of-the-ict-sustainability-tools-landscape)
   - [Getting started 🚀: visualize the data](#getting-started--visualize-the-data)
@@ -28,11 +24,16 @@ See the [CSV dataset](ictst/data/tools.csv)
 
 ## Data model
 
-The [data model](ictst/model/tools.frictionless-table-schema.json) of the raw data CSV file is described using [frictionless-table-schema](https://specs.frictionlessdata.io//table-schema/).
+This repository proposes a common data model that is used to reference all the tools or services.
+
+The [data model](ictst/model/tools.frictionless-table-schema.json) of the raw data CSV file is described using the [frictionless-table-schema](https://specs.frictionlessdata.io//table-schema/).
+
+> [!WARNING]
+> The data model is still very drafty and is expected to evolve.
 
 ## Documentation
 
-See [/doc/technical-documentaion.md](/doc/technical-documentation.md)
+See [/doc/technical-documentation.md](/doc/technical-documentation.md)
 
 ## Acknowledgments
 

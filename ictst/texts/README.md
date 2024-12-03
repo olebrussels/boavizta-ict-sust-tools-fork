@@ -1,19 +1,16 @@
 # Using this dataset 🤔
 
-This repository aims at providing the global IT Sustainability community a **vendor-neutral**, **fact-based**, **non-judgmental** and exhaustive repository of the tools and services available to assess the environmental footprint of IT components.
+This repository aims at providing a **vendor-neutral**, **fact-based**, **non-judgmental** and exhaustive inventory of the tools and services available to assess the environmental footprint of IT components.
 
-The data set displayed on this page is maintained as a open source project in <https://github.com/Boavizta/ict-sustainability-tools>.
+The data displayed on this page is maintained as a open source project in <https://github.com/Boavizta/ict-sustadatasetinability-tools>.
 
-## Disclaimers
+## About the data
 
-> ⚠️
-> Today, data contained in this repository is **not validated nor reviewed**.
+> ⚠️ **Caution:**
 >
-> 💡It is likely that the data contains false assumptions.
-> This is sample/mock data for the **sole purpose of development and testing** of the model.
-> It should NOT be used for anything else.
+> Today, data contained in this repository is not validated nor reviewed. It is likely to contain false assumptions. It is here as sample data for the sole purpose of development and testing of the model. It should NOT be used for any other purpose.
 >
-> 💡The data model is still very drafty and is expected to evolve.
+> The data model itself is still in its early iterations and is likely to evolve.
 
 ## What is next
 
