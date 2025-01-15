@@ -1,17 +1,34 @@
-# Using this dataset 🤔
+
+# Main objective
 
 This repository aims at providing a **vendor-neutral**, **fact-based**, **non-judgmental** and exhaustive inventory of the tools and services available to assess the environmental footprint of IT components.
 
-The data displayed on this page is maintained as a open source project in <https://github.com/Boavizta/ict-sustadatasetinability-tools>.
-
 ## About the data
+
+The data displayed on this page is maintained as a open source & open data project in <https://github.com/Boavizta/ict-sustainability-tools/>.
+
+License is AGPL-V3 (GNU AFFERO GENERAL PUBLIC LICENSE).
 
 > ⚠️ **Caution:**
 >
-> Today, data contained in this repository is not validated nor reviewed. It is likely to contain false assumptions. It is here as sample data for the sole purpose of development and testing of the model. It should NOT be used for any other purpose.
+> Data exposed in this repository is not yet fully reviewed and subject to evolution. It is likely to contain false assumptions.
 >
-> The data model itself is still in its early iterations and is likely to evolve.
+> You can use to as a starting point for your own research but you should use it under your own supervision and not take it as any kind of absolute true.
 
-## What is next
+Please get in touch or contribute (see below) if you notice errors in the data.
 
-Open the next tab to visualize the dataset.
+## Next step
+
+Open the [next tab](https://boavizta.github.io/ict-sustainability-tools/?datami_tab=2&datami_view=cards) to visualize the dataset.
+
+## Get in touch
+
+For any other question or if you want to geting in touch with the team, please [open a discussion](https://github.com/Boavizta/ict-sustainability-tools/discussions) or [open an issue](https://github.com/Boavizta/ict-sustainability-tools/issues) on the project Github repository.
+
+## Contribute to the data
+
+To propose an update on the data set, you have 2 options:
+
+The easiest way to contribute is to use the *EDIT* button on the next tab to propose a update. It will appear as an anonymous contribution to be validated in the git repository of the project.
+
+If you are familiar with git and csv editing, you may propose contributions directly as PR on the git repository.
