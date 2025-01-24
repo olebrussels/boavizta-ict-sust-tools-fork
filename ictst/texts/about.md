@@ -19,6 +19,8 @@ Please get in touch or contribute (see below) if you notice errors in the data.
 
 ## Next step
 
+Have a look at the [user manual](https://github.com/Boavizta/ict-sustainability-tools/doc/user-manual/how-to-use-the-tool.md).
+
 Open the [next tab](https://boavizta.github.io/ict-sustainability-tools/?datami_tab=2&datami_view=cards) to visualize the dataset.
 
 ## Get in touch
@@ -32,3 +34,5 @@ To propose an update on the data set, you have 2 options:
 The easiest way to contribute is to use the *EDIT* button on the next tab to propose a update. It will appear as an anonymous contribution to be validated in the git repository of the project.
 
 If you are familiar with git and csv editing, you may propose contributions directly as PR on the git repository.
+
+All details are given in the [user manual](https://github.com/Boavizta/ict-sustainability-tools/doc/user-manual/how-to-use-the-tool.md).

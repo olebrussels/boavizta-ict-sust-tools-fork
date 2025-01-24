@@ -14,7 +14,6 @@
 
 ### How to edit the data
 
-
 ## Other info
 
 See also this [next chapter](how-to-something-else.md).
