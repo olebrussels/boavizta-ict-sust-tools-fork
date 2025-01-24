@@ -8,9 +8,11 @@ This repository aims at providing a **vendor-neutral**, **fact-based**, **non-ju
 
 - [🗺️ Mapping of the ICT Sustainability Tools Landscape](#️-mapping-of-the-ict-sustainability-tools-landscape)
   - [Getting started 🚀: visualize the data](#getting-started--visualize-the-data)
-  - [Raw data (CSV)](#raw-data-csv)
-  - [Data model](#data-model)
-  - [Documentation](#documentation)
+  - [User manual](#user-manual)
+  - [Technical details](#technical-details)
+    - [Raw data (CSV)](#raw-data-csv)
+    - [Data model](#data-model)
+    - [Documentation](#documentation)
   - [Acknowledgments](#acknowledgments)
   - [Licenses](#licenses)
 
@@ -18,11 +20,18 @@ This repository aims at providing a **vendor-neutral**, **fact-based**, **non-ju
 
 Visualize or edit the data set at [https://boavizta.github.io/ict-sustainability-tools/](https://boavizta.github.io/ict-sustainability-tools/)
 
-## Raw data (CSV)
+## User manual
+
+Check [how to use the tool](/doc/user-manual/how-to-use-the-tool.md).
+
+
+## Technical details
+
+### Raw data (CSV)
 
 See the [CSV dataset](ictst/data/tools.csv)
 
-## Data model
+### Data model
 
 This repository proposes a common data model that is used to reference all the tools or services.
 
@@ -31,7 +40,7 @@ The [data model](ictst/model/tools.frictionless-table-schema.json) of the raw da
 > [!WARNING]
 > The data model is still very drafty and is expected to evolve.
 
-## Documentation
+### Documentation
 
 See [/doc/technical-documentation.md](/doc/technical-documentation.md)
 
